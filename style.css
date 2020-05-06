@@ -6,37 +6,48 @@ body {
 
 #sidebar-wrapper {
 	z-index: 1;
-	position: absolute;
-	width: 300px;
+	position: fixed;
+	width: 260px;
 	height: 100%;
-	overflow-y: hidden;
+	overflow: hidden;
 	background: black;
-	border: 2px solid red;	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	transition: 0.3s;
+	box-shadow: black 0px 0px 3px 3px;
+	text-align: center;
 }
 
 .sidebar-logo {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 300px;
-	margin-top: 10px;
+	width: 200px;
+	margin-top: 20px;
 	margin-bottom: 40px;
+	transform: rotate(-2deg);
 }
 
 .sidebar-logo img {
-	width: 80%;
+	width: 100%;
 }
 
 /* Content */
 #content-wrapper {
 	width: 100%;
 	position: absolute;
-	padding: 15px;
-	border: 5px solid green;
-	padding-left: 300px;
+	padding-top: 15px;
+	padding-left: 260px;
+	transition: 0.3s;
+}
+
+.hamburger {
+	outline: 0 !important;
+}
+
+.row {
+	box-shadow: black 0px 5px 5px -5px;
 }
 
 /* Sidebar width change to displayed */
@@ -52,45 +63,83 @@ body {
 /* Sidebar styling */
 .sidebar-nav {
 	padding: 0;
-  list-style: none;  
-  color: white;
+	list-style: none;
+	color: white;
 }
 
 .sidebar-nav li {
 	text-indent: 20px;
-  line-height: 40px;
-  font-size: 1.8rem;
+	line-height: 40px;
+	font-size: 1.8rem;
+	transition: 0.2s;
+}
+
+.sidebar-nav li:first-child {
+	font-family: 'Short Stack', cursive;
 }
 
 .sidebar-nav li a {
 	display: block;
 	text-decoration: none;
-  color: white;  
+	color: white;
 }
 
 .sidebar-nav li:hover {
 	background: #ffffff;
 }
 
+.sidebar-nav-social {
+	padding: 0;
+	list-style: none;
+	width: 40px;
+	margin-top: 440px;
+}
+
+.sidebar-nav-social li {
+	margin: 20px 0;
+}
+
+.sidebar-nav-social img {
+	width: 100%;
+}
+
 .about-me {
-  display: flex;
-  justify-content: space-evenly;  
-  flex-wrap: wrap;
-  max-width: 1200px;  
-  margin: auto;    
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: auto;
+	font-family: 'Short Stack', cursive;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.about-me h2 {
+	border-bottom: solid black 2px;
+	width: 175px;
+	margin-bottom: 20px;
 }
 
 .about-me__text {
-  max-width: 400px;
-  padding-bottom: 40px;
+	max-width: 400px;
+	padding-bottom: 40px;
 }
 
 .about-me__pic {
-  width: 200px;
-  align-self: flex-end;
-  padding-bottom: 40px;
+	width: 220px;
+	align-self: flex-end;
+	padding-bottom: 40px;
 }
 
 .about-me__pic img {
-  width: 100%;
+	width: 100%;
+	box-shadow: #4b4b4b 0px 5px 10px 0px;
+	border-radius: 5px;
+}
+
+.about-me-2 {
+	padding: 40px 0;
+	text-align: center;
+	font-family: 'Short Stack', cursive;
+	font-weight: bold;
+	font-size: 1.2rem;
 }
