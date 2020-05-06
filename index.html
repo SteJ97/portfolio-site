@@ -25,7 +25,7 @@
 			crossorigin="anonymous"
 		></script>
 		<link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet" />
-		<link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+		<link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
 		<title>Document</title>
 	</head>
@@ -48,7 +48,7 @@
 						<a href=""><img src="/Images/linkedin-xxl.png" alt="" /></a>
 					</li>
 					<li>
-						<a href=""><img src="/Images/github-11-xxl.png" alt="" /></a>
+						<a href="https://github.com/SteJ97" target="__blank"><img src="/Images/github-11-xxl.png" alt="" title="My GitHub!"/></a>
 					</li>
 					<li>
 						<a href=""><img src="/Images/twitter-xxl.png" alt="" /></a>
@@ -65,10 +65,10 @@
 							<a href="#" class="btn" id="menu-toggle">
 								<button class="hamburger hamburger--collapse" type="button">
 									<span class="hamburger-box">
-									  <span class="hamburger-inner"></span>
+										<span class="hamburger-inner"></span>
 									</span>
-								  </button>
-							</a>							
+								</button>
+							</a>
 							<div class="about-me">
 								<div class="about-me__text">
 									<h2>about me</h2>
@@ -102,7 +102,30 @@
 							</div>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="journey">
+								<div class="journey-text">
+									<p>My Journey</p>
+								</div>
+								<div class="journey-pic">
+									<div class="journey-pic__thumbtack">
+										<img src="/Images/thumbtack.png" alt="" />
+									</div>
+									<div class="journey-pic__map">
+										<img src="/Images/life-drawing.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
+				<footer>
+					<div class="to-top">
+						<a href="#wrapper"><img src="/Images/up-arrow.png" alt="" title="Back to top"/></a>
+					</div>
+					<p>By Stephen Johnson - 2020</p>
+				</footer>
 			</div>
 		</div>
 
@@ -118,6 +141,17 @@
 					$('.sidebar-nav li').css('transform', '');
 					$('.sidebar-nav li').css('color', 'white');
 				}
+			});
+		</script>
+		<script>
+			document.querySelectorAll('a[href^="#wrapper"]').forEach((anchor) => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+
+					document.querySelector(this.getAttribute('href')).scrollIntoView({
+						behavior: 'smooth',
+					});
+				});
 			});
 		</script>
 	</body>
