@@ -24,6 +24,8 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
 		></script>
+		<link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet" />
+		<link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
 		<link rel="stylesheet" href="style.css" />
 		<title>Document</title>
 	</head>
@@ -35,8 +37,22 @@
 					<img src="/Images/signature.png" alt="" />
 				</div>
 				<ul class="sidebar-nav">
-					<li><a href=""></a>about me</li>
+					<li><a href=""></a>about</li>
 					<li><a href=""></a>Portfolio</li>
+				</ul>
+				<ul class="sidebar-nav-social">
+					<li>
+						<a href=""><img src="/Images/mail-xxl.png" alt="" /></a>
+					</li>
+					<li>
+						<a href=""><img src="/Images/linkedin-xxl.png" alt="" /></a>
+					</li>
+					<li>
+						<a href=""><img src="/Images/github-11-xxl.png" alt="" /></a>
+					</li>
+					<li>
+						<a href=""><img src="/Images/twitter-xxl.png" alt="" /></a>
+					</li>
 				</ul>
 			</div>
 
@@ -46,20 +62,43 @@
 					<div class="row">
 						<div class="col-12">
 							<!-- Toggle button -->
-							<a href="#" class="btn btn-success" id="menu-toggle">Toggle menu</a>
+							<a href="#" class="btn" id="menu-toggle">
+								<button class="hamburger hamburger--collapse" type="button">
+									<span class="hamburger-box">
+									  <span class="hamburger-inner"></span>
+									</span>
+								  </button>
+							</a>							
 							<div class="about-me">
-                <div class="about-me__text">
-                  <h2>about me</h2>
-								<p>Hi, I’m Stephen.</p>
-								<p>A Web developer student based in Greater Manchester, UK.</p>
-								<p>
-									I enjoy turning a photoshop design into an interactive product. When i’m not coding
-									you’ll catch me playing video games to cool off from all that assignment work.
-								</p>
-                </div>
+								<div class="about-me__text">
+									<h2>about me</h2>
+									<p>Hi, I’m Stephen.</p>
+									<p>A Web developer student based in Greater Manchester, UK.</p>
+									<p>
+										I enjoy turning a photoshop design into an interactive product. When i’m not
+										coding you’ll catch me playing video games to cool off from all that assignment
+										work.
+									</p>
+								</div>
 								<div class="about-me__pic">
-                  <img src="/Images/me.jpg" alt="">
-                </div>
+									<img src="/Images/me.jpg" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="about-me-2">
+								<p>
+									Soon to join the real world, it is time to set my eye and efforts on a career path.
+								</p>
+								<p>
+									The design of websites is what first grew my interest ib web at first and that is
+									still the case.
+								</p>
+								<p>So front-end design & development is for me.</p>
+								<p>My HTML & CSS skills are still being refined.</p>
+								<p>UX Literature is being absorbed.</p>
 							</div>
 						</div>
 					</div>
@@ -72,6 +111,13 @@
 			$('#menu-toggle').click(function (e) {
 				e.preventDefault();
 				$('#wrapper').toggleClass('menuDisplayed');
+				if ($('.sidebar-nav li').css('transform') == 'none') {
+					$('.sidebar-nav li').css('transform', 'rotate(90deg)');
+					$('.sidebar-nav li').css('color', 'black');
+				} else {
+					$('.sidebar-nav li').css('transform', '');
+					$('.sidebar-nav li').css('color', 'white');
+				}
 			});
 		</script>
 	</body>
