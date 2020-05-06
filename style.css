@@ -113,6 +113,10 @@ body {
 	font-size: 1.2rem;
 }
 
+.fade {
+	opacity: 1;
+}
+
 .about-me h2 {
 	border-bottom: solid black 2px;
 	width: 175px;
@@ -154,8 +158,9 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	max-width: 800px;
+	max-width: 750px;
 	margin-bottom: 50px;
+	box-shadow: 0px 2px 4px 1px;
 }
 
 .journey-pic__thumbtack {
@@ -177,26 +182,34 @@ footer {
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	height: 70px;
+	height: 60px;
 	background-color: black;
+	box-shadow: black 0px 0px 3px 3px;
 }
 
 .to-top {
 	border-radius: 40px 40px 0 0;
 	position: absolute;
-	bottom: 57px;
-	width: 90px;
+	bottom: 30px;
+	width: 80px;
 	padding: 12px;
-	background-color: black;	
+	background-color: black;
 	text-align: center;
+	box-shadow: black 0px 0px 3px 3px;
+	z-index: 1;
 }
 
-.to-top img {	
+.to-top a {
+	display: inline-block;
+	height: 50px;
+}
+
+.to-top img {
 	width: 90%;
 }
 
 footer p {
-	line-height: 70px;
-	color: #d1d1d1;
-	z-index: 1;	
+	line-height: 100px;
+	color: white;
+	z-index: 1;
 }
