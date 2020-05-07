@@ -72,13 +72,15 @@
 					<div class="row row-1">
 						<div class="col-12">
 							<!-- Toggle button -->
-							<a href="#" class="btn" id="menu-toggle">
-								<button class="hamburger hamburger--collapse" type="button">
-									<span class="hamburger-box">
-										<span class="hamburger-inner"></span>
-									</span>
-								</button>
-							</a>
+							<header>
+								<a href="#" class="btn" id="menu-toggle">
+									<button class="hamburger hamburger--collapse" type="button">
+										<span class="hamburger-box">
+											<span class="hamburger-inner"></span>
+										</span>
+									</button>
+								</a>
+							</header>
 
 							<div class="about-me">
 								<div class="about-me__text">
@@ -151,13 +153,13 @@
 			$('#menu-toggle').click(function (e) {
 				e.preventDefault();
 				$('#wrapper').toggleClass('menuDisplayed');
-				if ($('.sidebar-nav li').css('transform') == 'none') {
-					$('.sidebar-nav li').css('transform', 'rotate(90deg)');
-					$('.sidebar-nav li').css('color', 'black');
-				} else {
-					$('.sidebar-nav li').css('transform', '');
-					$('.sidebar-nav li').css('color', 'white');
-				}
+				// if ($('.sidebar-nav li').css('transform') == 'none') {
+				// 	$('.sidebar-nav li').css('transform', 'rotate(90deg)');
+				// 	$('.sidebar-nav li').css('color', 'black');
+				// } else {
+				// 	$('.sidebar-nav li').css('transform', '');
+				// 	$('.sidebar-nav li').css('color', 'white');
+				// }
 			});
 		</script>
 		<!-- Dark mode toggle -->
