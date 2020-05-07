@@ -18,7 +18,7 @@ body {
 /* Sidebar */
 
 #sidebar-wrapper {
-	z-index: 1;
+	z-index: 2;
 	position: fixed;
 	width: 260px;
 	height: 100%;
@@ -52,6 +52,17 @@ body {
 	position: absolute;
 	padding-top: 15px;
 	padding-left: 260px;
+	transition: 0.3s;
+}
+
+header {
+	margin: -15px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+#menu-toggle {
 	transition: 0.3s;
 }
 
@@ -211,6 +222,7 @@ input:checked + .slider:before {
 	font-family: 'Short Stack', cursive;
 	font-weight: bold;
 	font-size: 1.2rem;
+	margin-top: 80px;
 }
 
 .fade {
@@ -312,6 +324,36 @@ footer p {
 	line-height: 100px;
 	color: white;
 	z-index: 1;
+}
+
+@media (max-width: 927px) {
+	#content-wrapper {
+		padding-left: 0px;
+	}
+
+	#sidebar-wrapper {
+		width: 0px;
+	}
+	#wrapper.menuDisplayed #sidebar-wrapper {
+		width: 260px;
+	}
+
+	#wrapper.menuDisplayed #menu-toggle {
+		padding-left: 250px;
+	}
+
+	.about-me {
+		margin-top: 120px;
+	}
+
+	header {
+		background-color: black;
+	}
+	.hamburger-inner,
+	.hamburger-inner:after,
+	.hamburger-inner:before {
+		background-color: white !important;
+	}
 }
 
 ::-webkit-scrollbar {
