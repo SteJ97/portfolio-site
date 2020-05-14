@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet" />
+		<link href="/hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/animate.min.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="/shared.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<!-- Sidebar -->
+			<div id="sidebar-wrapper">
+				<ul class="sidebar-nav">
+					<div class="sidebar-logo">
+						<img src="/Images/signature.png" alt="" />
+					</div>
+					<li><a href="/index.html">about</a></li>
+					<li><a href="#">Portfolio</a></li>
+				</ul>
+				<div class="sidebar-nav-social">
+					<p>Dark mode</p>
+					<label class="switch" id="dark-mode-toggle">
+						<input onclick="myFunction()" type="checkbox" />
+						<span class="slider round"></span>
+					</label>
+					<ul class="sidebar-nav-social__items">
+						<li>
+							<a href=""><img src="/Images/mail-xxl.png" alt="" /></a>
+						</li>
+						<li>
+							<a href=""><img src="/Images/linkedin-xxl.png" alt="" /></a>
+						</li>
+						<li>
+							<a href="https://github.com/SteJ97" target="__blank"
+								><img src="/Images/github-11-xxl.png" alt="" title="My GitHub!"
+							/></a>
+						</li>
+						<li>
+							<a href=""><img src="/Images/twitter-xxl.png" alt="" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Content -->
+			<div id="content-wrapper">
+				<div class="container-fluid">
+					<div class="row row-1">
+						<div class="col-12">
+							<!-- Toggle button -->
+							<header>
+								<a href="#" class="btn" id="menu-toggle">
+									<button class="hamburger hamburger--collapse" type="button">
+										<span class="hamburger-box">
+											<span class="hamburger-inner"></span>
+										</span>
+									</button>
+								</a>
+							</header>
+						</div>
+					</div>
+					<div class="row row-2">
+						<div class="col-12">
+							<div class="work">
+								<div class="work-list">
+									<h2>My Work</h2>
+									<ul>
+										<li><a class="active" href="">The Bee Centre</a></li>
+										<li><a href="">Responsive Iframe</a></li>
+									</ul>
+								</div>
+								<div class="work-iframe">
+									<h2>The bee centre</h2>
+									<div class="iframe">
+										<img src="/Images/iphone.png" alt="" />
+										<iframe src="https://keen-hypatia-afc630.netlify.app" frameborder="0"></iframe>
+									</div>
+								</div>
+								<div class="work-about">
+									<h2>About the work</h2>
+									<p>
+										I created this piece based on an assignment brief for University. This piece
+										allowed me to expand my CSS skills etc
+									</p>
+								</div>
+							</div>
+							<div class="work-more-about">
+								<a href="#">More about the work <img src="/Images/downarrow.png" alt="" /></a>
+							</div>
+						</div>
+					</div>
+					<div class="row row-3">
+						<div class="col-12">
+							<div class="work-more">
+								<h2>
+									Project Brief
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<div class="to-top" href="#wrapper">
+						<a href="#wrapper"
+							><img
+								class="animated tada infinite slow"
+								src="/Images/up-arrow.png"
+								alt=""
+								title="Back to top"
+						/></a>
+					</div>
+					<p>By Stephen Johnson - 2020</p>
+				</footer>
+			</div>
+		</div>
+
+		<!-- Side menu toggle -->
+		<script>
+			$('#menu-toggle').click(function (e) {
+				e.preventDefault();
+				$('#wrapper').toggleClass('menuDisplayed');
+			});
+		</script>
+		<!-- Dark mode toggle -->
+
+		<script>
+			function myFunction() {
+				var element = document.querySelector('body');
+				element.classList.toggle('dark-mode');
+				var elementH2 = document.querySelector('h2');
+				elementH2.classList.toggle('h2');
+				var elementBoxShadow = document.querySelector('.row-1');
+				elementBoxShadow.classList.toggle('box-shadow');
+				var elementBoxShadow2 = document.querySelector('.row-2');
+				elementBoxShadow2.classList.toggle('box-shadow');
+			}
+		</script>
+
+		<!-- Scroll to top -->
+		<script>
+			document.querySelectorAll('a[href^="#wrapper"]').forEach((anchor) => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+
+					document.querySelector(this.getAttribute('href')).scrollIntoView({
+						behavior: 'smooth',
+					});
+				});
+			});
+		</script>
+		<!-- Fade on scroll -->
+		<script>
+			$(window).scroll(function () {
+				$('.about-me').css('opacity', 1 - $(window).scrollTop() / 700);
+			});
+		</script>
+	</body>
+</html>
