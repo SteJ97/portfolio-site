@@ -70,7 +70,8 @@ header {
 .about-me,
 .work,
 .work-more-about,
-.row-3 {
+.row-3,
+.CV {
 	animation: fadeInLeft;
 	animation-duration: 1s;
 }
