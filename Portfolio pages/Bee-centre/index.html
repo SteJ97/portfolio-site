@@ -26,6 +26,7 @@
 		></script>
 		<link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet" />
 		<link href="/hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 		<link rel="stylesheet" href="/animate.min.css" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="/shared.css" />
@@ -106,15 +107,12 @@
 								</div>
 							</div>
 							<div class="work-more-about">
-								<a href="#">More about the work <img src="/Images/downarrow.png" alt="" /></a>
+								<a href="#work-more">More about the work <img src="/Images/downarrow.png" alt="" /></a>
 							</div>
 						</div>
 					</div>
-					<div class="row row-2">
-						<div class="col-12"></div>
-					</div>
-					<div class="row row-3">
-						<div class="col-12">
+					<div class="row row-2 justify-content-center">
+						<div class="col-xl-8" id="work-more">
 							<div class="work-more">
 								<h2>
 									Project Brief
@@ -123,8 +121,137 @@
 									<p>
 										As a Project brief for university, i have designed and created an informative
 										site for 'The Bee Centre', an environmental orientated business focused on
-										bee's.
+										bee's. <br /><br />
+										I was required to create a 5 page site, which each page required a variety of
+										different types of information, including basic paragraph texts, galleries and a
+										usable contact form. The whole colour scheme of the site follows what the client
+										asked for along with a theme type theme.
 									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row-3 justify-content-center">
+						<div class="col-xl-8">
+							<div class="w3-content work-gallery">
+								<img
+									class="mySlides"
+									src="/Images/bee-site-home.jpg"
+									style="width: 100%; display: none;"
+								/>
+								<img class="mySlides" src="/Images/img_snow_wide.jpg" style="width: 100%;" />
+								<img
+									class="mySlides"
+									src="/Images/img_mountains_wide.jpg"
+									style="width: 100%; display: none;"
+								/>
+								<img
+									class="mySlides"
+									src="/Images/img_mountains_wide.jpg"
+									style="width: 100%; display: none;"
+								/>
+
+								<div class="w3-row-padding w3-section">
+									<div class="w3-col s3">
+										<img
+											class="demo w3-opacity w3-hover-opacity-off"
+											src="/Images/bee-site-home.jpg"
+											style="width: 100%; cursor: pointer;"
+											onclick="currentDiv(1)"
+										/>
+									</div>
+									<div class="w3-col s3">
+										<img
+											class="demo w3-opacity w3-hover-opacity-off"
+											src="/Images/img_snow_wide.jpg"
+											style="width: 100%; cursor: pointer;"
+											onclick="currentDiv(2)"
+										/>
+									</div>
+									<div class="w3-col s3">
+										<img
+											class="demo w3-opacity w3-hover-opacity-off"
+											src="/Images/img_mountains_wide.jpg"
+											style="width: 100%; cursor: pointer;"
+											onclick="currentDiv(3)"
+										/>
+									</div>
+									<div class="w3-col s3">
+										<img
+											class="demo w3-opacity w3-hover-opacity-off"
+											src="/Images/img_mountains_wide.jpg"
+											style="width: 100%; cursor: pointer;"
+											onclick="currentDiv(3)"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row-4 justify-content-center">
+						<div class="col-lg-10">
+							<div class="work-more__methods">
+								<h2>
+									Methods
+								</h2>
+								<h3>
+									Languages
+								</h3>
+								<div class="code-logos">
+									<div class="code-logos__logo">
+										<div class="code-logos__logo-1">
+											<svg viewBox="0 0 452 520">
+												<title>HTML5 Logo Badge</title>
+												<path fill="RGB(227,79,38)" d="M 41,460 L 0,0 451,0 410,460 225,512" />
+												<path fill="RGB(239,101,42)" d="M 226,472 L 375,431 410,37 226,37" />
+												<path
+													fill="RGB(236,237,238)"
+													d="M 226,208 L 151,208 146,150 226,150 226,94 84,94 99,265 226,265 z M 226,355 L162,338 158,293 102,293 109,382 226,414 z"
+												/>
+												<path
+													fill="RGB(255,255,255)"
+													d="M 226,265 L 295,265 288,338 226,355 226,414 341,382 357,208 226,208 z M 226,94 L226,150 362,150 367,94 z"
+												/>
+											</svg>
+										</div>
+										<p>HTML was used for the content, from the paragraphs to the contact form.</p>
+									</div>
+									<div class="code-logos__logo">
+										<div class="code-logos__logo-2">
+											<svg viewBox="0 0 452 520">
+												<title>Javascript Logo Badge</title>
+												<path fill="RGB(229,162,40)" d="M 0,0 L 451,0 410,460 225,512 41,460" />
+												<path fill="RGB(241,191,38)" d="M 226,472 L375,431 410,37 226,37" />
+												<path
+													fill="RGB(236,237,238)"
+													d="M 226,94 L 113,94 102,265 226,265 226,208 160,208 165,150 226,150 z M 226,355 L 162,338 158,293 102,293 109,382 226,414 z"
+												/>
+												<path
+													fill="RGB(255,255,255)"
+													d="M 226,265 L 295,265 288,338 226,355 226,414 341,382 357,208 226,208 z M 226,94 L 339,94 357,180 301,180 293,150 226,150 z"
+												/>
+											</svg>
+										</div>
+										<p>CSS allowed for the Bee colour theme the site holds. </p>
+									</div>
+									<div class="code-logos__logo">
+										<div class="code-logos__logo-3">
+											<svg viewBox="0 0 452 520">
+												<title>CSS3 Logo Badge</title>
+												<path fill="RGB(12,115,184)" d="M 41,460 L 0,0 451,0 410,460 225,512" />
+												<path fill="RGB(48,169,220)" d="M 226,472 L 375,431 410,37 226,37" />
+												<path
+													fill="RGB(236,237,238)"
+													d="M 226,208 L 94,208 99,265 226,265 z M 226,94 L 84,94 89,150 226,150 z M 226,355 L 102,322 109,382 226,414 z"
+												/>
+												<path
+													fill="RGB(255,255,255)"
+													d="M 226,265 L 295,265 288,338 226,355 226,414 341,382 367,94 226,94 226,150 306,150 300,208 226,208 z"
+												/>
+											</svg>
+										</div>
+										<p>JavaScript allowed for the gallery to work and to load the navbar on every page.</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -169,7 +296,7 @@
 
 		<!-- Scroll to top -->
 		<script>
-			document.querySelectorAll('a[href^="#wrapper"]').forEach((anchor) => {
+			document.querySelectorAll('a[href^="#wrapper"], a[href^="#work-more"]').forEach((anchor) => {
 				anchor.addEventListener('click', function (e) {
 					e.preventDefault();
 
@@ -184,6 +311,32 @@
 			$(window).scroll(function () {
 				$('.about-me').css('opacity', 1 - $(window).scrollTop() / 700);
 			});
+		</script>
+		<!-- Gallery  -->
+		<script>
+			function currentDiv(n) {
+				showDivs((slideIndex = n));
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName('mySlides');
+				var dots = document.getElementsByClassName('demo');
+				if (n > x.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = x.length;
+				}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = 'none';
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(' w3-opacity-off', '');
+				}
+				x[slideIndex - 1].style.display = 'block';
+				dots[slideIndex - 1].className += ' w3-opacity-off';
+			}
 		</script>
 	</body>
 </html>
