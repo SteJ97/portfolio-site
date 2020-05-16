@@ -121,6 +121,7 @@
 }
 
 .work-more h2 {
+	text-decoration: underline;
 }
 
 .work-more-intro {
@@ -128,10 +129,109 @@
 
 .work-gallery {
 	box-shadow: 0 0 3px 1px #5a5a5a;
+	margin: 50px auto;
 }
 
 .work-more__methods {
 	text-align: center;
+}
+
+.work-more__methods h2 {
+	text-decoration: underline;
+}
+
+.methodology {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 70px;
+}
+
+.methodology ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	max-width: 1000px;
+}
+
+.methodology-requirements,
+.methodology-analysis,
+.methodology-design,
+.methodology-code,
+.methodology-testing {
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	box-shadow: -10px 10px 5px -100px #757575;
+}
+
+.methodology-requirements h4,
+.methodology-analysis h4,
+.methodology-design h4,
+.methodology-code h4,
+.methodology-testing h4 {
+	border-radius: 5px;
+	color: white;
+	display: inline-block;
+	padding: 10px;
+	margin: 20px;
+	width: 150px;
+}
+
+.methodology-requirements {
+	border: solid;
+	border-width: 0 0 3px 3px;
+	border-image-source: linear-gradient(to right, white 1%, blue 60%, orange 100%);
+	border-image-slice: 50;
+}
+
+.methodology-analysis {
+	border: solid;
+	border-width: 0 3px 3px 0;
+	border-image-source: linear-gradient(to left, orange 70%, green 100%);
+	border-image-slice: 5;
+}
+
+.methodology-design {
+	border: solid;
+	border-width: 0 0 3px 3px;
+	border-image-source: linear-gradient(to right, green 70%, red 100%);
+	border-image-slice: 5;
+}
+
+.methodology-code {
+	border: solid;
+	border-width: 0 3px 3px 0;
+	border-image-source: linear-gradient(to left, red 70%, purple 100%);
+	border-image-slice: 5;
+}
+
+.methodology-testing {
+	border: solid;
+	border-width: 0 0 3px 3px;
+	border-image-source: linear-gradient(to right, purple 70%, white 100%);
+	border-image-slice: 5;
+}
+
+.methodology-requirements h4 {
+	background-color: blue;
+}
+
+.methodology-analysis h4 {
+	background-color: orange;
+}
+
+.methodology-design h4 {
+	background-color: green;
+}
+
+.methodology-code h4 {
+	background-color: red;
+}
+
+.methodology-testing h4 {
+	background-color: purple;
 }
 
 .code-logos {
