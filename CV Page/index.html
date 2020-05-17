@@ -71,6 +71,11 @@
 			<!-- Content -->
 			<div id="content-wrapper">
 				<div class="container-fluid">
+					<div class="header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"></div>
+						</div>
+					</div>
 					<div class="row row-1">
 						<div class="col-12">
 							<header>
@@ -173,46 +178,6 @@
 				</footer>
 			</div>
 		</div>
-
-		<!-- Side menu toggle -->
-		<script>
-			$('#menu-toggle').click(function (e) {
-				e.preventDefault();
-				$('#wrapper').toggleClass('menuDisplayed');
-			});
-		</script>
-		<!-- Dark mode toggle -->
-
-		<script>
-			function myFunction() {
-				var element = document.querySelector('body');
-				element.classList.toggle('dark-mode');
-				var elementH2 = document.querySelector('h2');
-				elementH2.classList.toggle('h2');
-				var elementBoxShadow = document.querySelector('.row-1');
-				elementBoxShadow.classList.toggle('box-shadow');
-				var elementBoxShadow2 = document.querySelector('.row-2');
-				elementBoxShadow2.classList.toggle('box-shadow');
-			}
-		</script>
-
-		<!-- Scroll to top -->
-		<script>
-			document.querySelectorAll('a[href^="#wrapper"]').forEach((anchor) => {
-				anchor.addEventListener('click', function (e) {
-					e.preventDefault();
-
-					document.querySelector(this.getAttribute('href')).scrollIntoView({
-						behavior: 'smooth',
-					});
-				});
-			});
-		</script>
-		<!-- Fade on scroll -->
-		<script>
-			$(window).scroll(function () {
-				$('.about-me').css('opacity', 1 - $(window).scrollTop() / 700);
-			});
-		</script>
+		<script src="/Javascript.js"></script>
 	</body>
 </html>
