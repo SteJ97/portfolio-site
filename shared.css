@@ -2,6 +2,33 @@ body {
 	margin: 0;
 }
 
+/* Progress bar */
+
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	background-color: #f1f1f1;
+	margin-left: -12px;
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container {
+	width: 100%;
+	height: 5px;
+	background: #ccc;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+	height: 5px;
+	background: red;
+	width: 0%;
+  }
+
+/* Progress bar end */
+
 .dark-mode {
 	background-color: rgba(0, 0, 0, 0.85);
 	color: white;
@@ -306,6 +333,9 @@ footer p {
 
 	.about-me {
 		margin-top: 120px;
+	}
+	.header {
+		top: 72px;
 	}
 
 	header {
