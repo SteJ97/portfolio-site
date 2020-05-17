@@ -72,6 +72,11 @@
 			<!-- Content -->
 			<div id="content-wrapper">
 				<div class="container-fluid">
+					<div class="header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"></div>
+						</div>
+					</div>
 					<div class="row row-1">
 						<div class="col-12">
 							<!-- Toggle button -->
@@ -88,12 +93,12 @@
 								<div class="work-list">
 									<ul>
 										<h2>My Work</h2>
-										<li><a class="active" href="">The Bee Centre</a></li>
-										<li><a href="">Responsive Iframe</a></li>
+										<li><a class="active" href="#">The Bee Centre</a></li>
+										<li><a href="/Portfolio pages/Iframe/index.html">Responsive Iframe</a></li>
 									</ul>
 								</div>
 								<div id="work-iframe-wrapper"> 
-									<h2>The Bee Centre</h2>
+									<h2><a href="https://keen-hypatia-afc630.netlify.app" target="_blank">The Bee Centre</a></h2>
 									<div class="work-iframe">
 										<iframe
 											src="https://keen-hypatia-afc630.netlify.app"
@@ -330,72 +335,6 @@
 				</footer>
 			</div>
 		</div>
-
-		<!-- Side menu toggle -->
-		<script>
-			$('#menu-toggle').click(function (e) {
-				e.preventDefault();
-				$('#wrapper').toggleClass('menuDisplayed');
-			});
-		</script>
-		<!-- Dark mode toggle -->
-
-		<script>
-			function myFunction() {
-				var element = document.querySelector('body');
-				element.classList.toggle('dark-mode');
-				var elementH2 = document.querySelector('h2');
-				elementH2.classList.toggle('h2');
-				var elementBoxShadow = document.querySelector('.row-1');
-				elementBoxShadow.classList.toggle('box-shadow');
-				var elementBoxShadow2 = document.querySelector('.row-2');
-				elementBoxShadow2.classList.toggle('box-shadow');
-			}
-		</script>
-
-		<!-- Scroll to top -->
-		<script>
-			document.querySelectorAll('a[href^="#wrapper"], a[href^="#work-more"]').forEach((anchor) => {
-				anchor.addEventListener('click', function (e) {
-					e.preventDefault();
-
-					document.querySelector(this.getAttribute('href')).scrollIntoView({
-						behavior: 'smooth',
-					});
-				});
-			});
-		</script>
-		<!-- Fade on scroll -->
-		<script>
-			$(window).scroll(function () {
-				$('.about-me').css('opacity', 1 - $(window).scrollTop() / 700);
-			});
-		</script>
-		<!-- Gallery  -->
-		<script>
-			function currentDiv(n) {
-				showDivs((slideIndex = n));
-			}
-
-			function showDivs(n) {
-				var i;
-				var x = document.getElementsByClassName('mySlides');
-				var dots = document.getElementsByClassName('demo');
-				if (n > x.length) {
-					slideIndex = 1;
-				}
-				if (n < 1) {
-					slideIndex = x.length;
-				}
-				for (i = 0; i < x.length; i++) {
-					x[i].style.display = 'none';
-				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(' w3-opacity-off', '');
-				}
-				x[slideIndex - 1].style.display = 'block';
-				dots[slideIndex - 1].className += ' w3-opacity-off';
-			}
-		</script>
+		<script src="/Javascript.js"></script>
 	</body>
 </html>
