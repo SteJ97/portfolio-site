@@ -25,61 +25,77 @@
 			crossorigin="anonymous"
 		></script>
 		<link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet" />
+		<!-- Navbar hamburger icon CSS -->
 		<link href="/hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<!-- Animate CSS link -->
 		<link rel="stylesheet" href="/animate.min.css" />
+		<!-- Main page CSS -->
 		<link rel="stylesheet" href="style.css" />
+		<!-- All pages CSS -->
 		<link rel="stylesheet" href="/shared.css" />
 		<title>S.Johnson - Portfolio</title>
 	</head>
 	<body>
+		<!-- Content wrapper -->
 		<div id="wrapper">
 			<!-- Sidebar -->
 			<div id="sidebar-wrapper">
 				<ul class="sidebar-nav">
+					<!-- Main logo -->
 					<div class="sidebar-logo">
 						<a href="/index.html"><img src="/Images/signature.png" alt="signature" /></a>
 					</div>
+					<!-- Main nav links -->
 					<li><a href="/index.html">about</a></li>
 					<li><a href="#">Portfolio</a></li>
 					<li><a href="/CV Page/index.html">My CV</a></li>
 				</ul>
+				<!-- Bottom navigation social links -->
 				<div class="sidebar-nav-social">
+					<!-- Dark mode toggle -->
 					<p>Dark mode</p>
 					<label class="switch" id="dark-mode-toggle">
-						<input onclick="myFunction()" type="checkbox" />
+						<!-- Dark mode toggle function -->
+						<input onclick="darkMode()" type="checkbox" />
 						<span class="slider round"></span>
 					</label>
+					<!-- Main social links list -->
 					<ul class="sidebar-nav-social__items">
+						<!-- Email link -->
 						<li>
-							<a href=""><img src="/Images/mail-xxl.png" alt="mail" /></a>
+							<a href="mailto:stej97@hotmail.co.uk"><img src="/Images/mail-xxl.png" alt="" /></a>
 						</li>
+						<!-- Linkedin link -->
 						<li>
-							<a href=""><img src="/Images/linkedin-xxl.png" alt="linked-in" /></a>
+							<a href="https://www.linkedin.com/in/stephen-johnson-504437180/"><img src="/Images/linkedin-xxl.png" alt="" /></a>
 						</li>
+						<!-- GitHub link -->
 						<li>
 							<a href="https://github.com/SteJ97" target="__blank"
-								><img src="/Images/github-11-xxl.png" alt="github" title="My GitHub!"
+								><img src="/Images/github-11-xxl.png" alt="" title="My GitHub!"
 							/></a>
 						</li>
+						<!-- Twitter link -->
 						<li>
-							<a href=""><img src="/Images/twitter-xxl.png" alt="twitter" /></a>
+							<a href="https://twitter.com/PHNX1997"><img src="/Images/twitter-xxl.png" alt="" /></a>
 						</li>
 					</ul>
 				</div>
 			</div>
 
-			<!-- Content -->
+			<!-- Main Content -->
 			<div id="content-wrapper">
 				<div class="container-fluid">
+					<!-- Page progress bar -->
 					<div class="header">
 						<div class="progress-container">
 							<div class="progress-bar" id="myBar"></div>
 						</div>
 					</div>
+					<!-- First row -->
 					<div class="row row-1">
 						<div class="col-12">
-							<!-- Toggle button -->
+							<!-- Sidebar toggle button -->
 							<header>
 								<a href="#" class="btn" id="menu-toggle">
 									<button name="hamburger" class="hamburger hamburger--collapse" type="button">
@@ -89,7 +105,9 @@
 									</button>
 								</a>
 							</header>
+							<!-- Responsive iframe work showcase -->
 							<div class="work">
+								<!-- Work links -->
 								<div class="work-list">
 									<ul>
 										<h2>My Work</h2>
@@ -97,12 +115,16 @@
 										<li><a class="active" href="#">Responsive Iframe</a></li>
 									</ul>
 								</div>
+								<!-- Centre row iframe wrapper -->
 								<div id="work-iframe-wrapper">
+									<!-- Iframe link -->
 									<h2><a href="https://happy-lamport-fe5e6e.netlify.app" target="_blank">Responsive Iframe</a></h2>
+									<!-- Main iframe container -->
 									<div class="work-iframe">
 										<img src="/Images/iframe-site.jpg" alt="iframe-site" />
 									</div>
 								</div>
+								<!-- Right side about work -->
 								<div class="work-about">
 									<h2>About the work</h2>
 									<p>
@@ -111,6 +133,7 @@
 									</p>
 								</div>
 							</div>
+							<!-- Second row link -->
 							<div class="work-more-about">
 								<a href="#work-more"
 									>More about the work <img src="/Images/downarrow.png" alt="down-arrow"
@@ -118,8 +141,10 @@
 							</div>
 						</div>
 					</div>
+					<!-- Second row -->
 					<div class="row row-2 justify-content-center">
 						<div class="col-xl-8" id="work-more">
+							<!-- Work brief text -->
 							<div class="work-more">
 								<h2>
 									Project Brief
@@ -139,13 +164,15 @@
 							</div>
 						</div>
 					</div>
-
-					<div class="row row-4 justify-content-center">
+					<!-- Third row -->
+					<div class="row row-3 justify-content-center">
 						<div class="col-lg-10">
+							<!-- Work methods -->
 							<div class="work-more__methods">
 								<h2>
 									Methods
 								</h2>
+								<!-- How the work works -->
 								<div class="work-more__methods-text">
 									<h3>How it works</h3>
 									<p>
@@ -162,10 +189,13 @@
 										without changing how the site would look.
 									</p>
 								</div>
+								<!-- Work languages used -->
 								<h3>
 									Languages
 								</h3>
+								<!-- Code language logo SVG's container -->
 								<div class="code-logos">
+									<!-- HTML logo SVG -->
 									<div class="code-logos__logo">
 										<div class="code-logos__logo-1">
 											<svg viewBox="0 0 452 520">
@@ -184,6 +214,7 @@
 										</div>
 										<p>HTML was used for the content, such as the search bar and iframe.</p>
 									</div>
+									<!-- Javascript logo SVG -->
 									<div class="code-logos__logo">
 										<div class="code-logos__logo-2">
 											<svg viewBox="0 0 452 520">
@@ -202,6 +233,7 @@
 										</div>
 										<p>CSS was used just to style the navigation bar.</p>
 									</div>
+									<!-- CSS logo SVG -->
 									<div class="code-logos__logo">
 										<div class="code-logos__logo-3">
 											<svg viewBox="0 0 452 520">
@@ -228,6 +260,7 @@
 					</div>
 				</div>
 				<footer>
+					<!-- Scroll to top footer link -->
 					<div class="to-top">
 						<a href="#wrapper"
 							><img
@@ -237,10 +270,12 @@
 								title="Back to top"
 						/></a>
 					</div>
+					<!-- Footer site author info -->
 					<p>By Stephen Johnson - 2020</p>
 				</footer>
 			</div>
 		</div>
+		<!-- Whole page Javascript link -->
 		<script src="/Javascript.js"></script>
 	</body>
 </html>
