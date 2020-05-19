@@ -6,7 +6,7 @@ $('#menu-toggle').click(function (e) {
 
 // <!-- Dark mode toggle -->
 
-function myFunction() {
+function darkMode() {
     var element = document.querySelector('body');
     element.classList.toggle('dark-mode');
     var elementH2 = document.querySelector('h2');
@@ -36,7 +36,7 @@ $(window).scroll(function () {
 });
 
 
-// When the user scrolls the page, execute myFunction
+// When the user scrolls the page, execute ProgressFunction
 window.onscroll = function () {
     ProgressFunction();
 };
