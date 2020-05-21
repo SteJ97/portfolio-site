@@ -1,3 +1,5 @@
+/* Work section CSS block */
+
 .work {
 	display: flex;
 	justify-content: space-evenly;
@@ -23,7 +25,9 @@
 	margin-bottom: 20px;
 }
 
-a[href*='http'] {
+/* h2 with anchor tag will display link indicator image */
+
+h2 a[href*='http'] {
 	background: url('https://mdn.mozillademos.org/files/12982/external-link-52.png') no-repeat 100% 50%;
 	background-size: 16px 16px;
 	padding: 0 20px;
@@ -88,7 +92,7 @@ a[href*='http'] {
 	height: 100%;
 }
 
-/* End of phone iframe */
+/* About work CSS block */
 
 .work-about {
 	width: 32%;
@@ -142,6 +146,8 @@ a[href*='http'] {
 	margin-bottom: 80px;
 }
 
+/* Coding language logo CSS block */
+
 .code-logos {
 	display: flex;
 	justify-content: space-evenly;
@@ -156,6 +162,8 @@ a[href*='http'] {
 	width: 90%;
 	margin: 10px;
 }
+
+/* Media queries */
 
 @media (max-width: 1430px) {
 	.work {
