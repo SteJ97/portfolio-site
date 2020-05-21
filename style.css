@@ -3,6 +3,8 @@
 	box-shadow: black 0px 5px 5px -5px;
 }
 
+/* About me CSS block */
+
 .about-me {
 	display: flex;
 	justify-content: space-evenly;
@@ -36,6 +38,8 @@
 	box-shadow: #4b4b4b 0px 5px 10px 0px;
 	border-radius: 5px;
 }
+
+/* Journey CSS block */
 
 .about-me-2,
 .journey {
