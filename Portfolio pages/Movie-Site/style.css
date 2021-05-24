@@ -1,170 +1,172 @@
 /* Work section CSS block */
 
 .work {
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	font-size: 1.2rem;
-	margin-top: 80px;
-	padding-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  margin-top: 80px;
+  padding-bottom: 10px;
 }
 
 .work-list {
-	width: 32%;
-	height: 200px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-right: 50px;
-	max-width: 380px;
-	border-right: solid rgba(0, 0, 0, 0.2) 1px;
+  width: 32%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 50px;
+  max-width: 380px;
+  border-right: solid rgba(0, 0, 0, 0.2) 1px;
 }
 
 .work-list h2 {
-	padding-bottom: 5px;
-	margin-bottom: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 /* h2 with anchor tag will display link indicator image */
 
-h2 a[href*='http'] {
-	background: url('https://mdn.mozillademos.org/files/12982/external-link-52.png') no-repeat 100% 50%;
-	background-size: 16px 16px;
-	padding: 0 20px;
+h2 a[href*="http"] {
+  background: url("https://mdn.mozillademos.org/files/12982/external-link-52.png")
+    no-repeat 100% 50%;
+  background-size: 16px 16px;
+  padding: 0 20px;
 }
 
 .work-list ul {
-	text-align: center;
-	list-style: none;
-	align-self: flex-end;
+  text-align: center;
+  list-style: none;
+  align-self: flex-end;
 }
 
 .work-list li {
-	margin: 8px 0;
-	width: 100%;
+  margin: 8px 0;
+  width: 100%;
 }
 
 .work-list li a {
-	display: inline-block;
-	padding: 5px;
-	width: 100%;
-	margin-right: 8px;
-	color: black;
-	text-decoration: none;
-	background-color: #d3d3d3;
-	box-shadow: #afafaf 0px 0px 2px 1px;
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+  margin-right: 8px;
+  color: black;
+  text-decoration: none;
+  background-color: #d3d3d3;
+  box-shadow: #afafaf 0px 0px 2px 1px;
 }
 
 .work-list li a:hover {
-	background-color: #a7a7a7;
+  background-color: #a7a7a7;
 }
 
 .work-list li a.active {
-	background-color: #a7a7a7;
+  background-color: #a7a7a7;
 }
 
 /* Phone iframe */
 
 #work-iframe-wrapper {
-	text-align: center;
-	width: 32%;
+  text-align: center;
+  width: 32%;
 }
 
 #work-iframe-wrapper h2 {
-	text-decoration: underline;
-	font-weight: bold;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .work-iframe {
-	width: 340px;
-	height: 650px;
-	border: 40px solid #292929;
-	border-width: 50px 14px;
-	border-radius: 40px;
-	margin: 23.5px auto;
-	overflow: hidden;
-	transition: all 0.5s ease;
-	box-shadow: 0px 3px 0 #555555, 0px 4px 0 #555555, 0px 5px 0 #555555, 0px 7px 0 #555555, 0px 10px 20px #666;
+  width: 340px;
+  height: 650px;
+  border: 40px solid #292929;
+  border-width: 50px 14px;
+  border-radius: 40px;
+  margin: 23.5px auto;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  box-shadow: 0px 3px 0 #555555, 0px 4px 0 #555555, 0px 5px 0 #555555,
+    0px 7px 0 #555555, 0px 10px 20px #666;
 }
 
 .work-iframe iframe {
-	border: 0;
-	width: 100%;
-	height: 100%;
+  border: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* About work CSS block */
 
 .work-about {
-	width: 32%;
-	height: 200px;
-	max-width: 380px;
-	text-align: center;
-	padding-left: 30px;
-	border-left: solid rgba(0, 0, 0, 0.2) 1px;
+  width: 32%;
+  height: 200px;
+  max-width: 380px;
+  text-align: center;
+  padding-left: 30px;
+  border-left: solid rgba(0, 0, 0, 0.2) 1px;
 }
 
 .work-more-about {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 80px;
-	border: solid black;
-	border-width: 2px 0 2px 0;
-	margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border: solid black;
+  border-width: 2px 0 2px 0;
+  margin-bottom: 40px;
 }
 
 .work-more-about a {
-	color: black;
-	text-decoration: none;
-	font-size: 1.6rem;
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
 }
 
 .work-more-about img {
-	width: 30px;
+  width: 30px;
 }
 
 .work-more,
 .work-more__methods {
-	text-align: center;
-	margin: 40px 0;
+  text-align: center;
+  margin: 40px 0;
 }
 
 .work-more h2 {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .work-gallery {
-	box-shadow: 0 0 3px 1px #5a5a5a;
-	margin: 50px auto;
+  box-shadow: 0 0 3px 1px #5a5a5a;
+  margin: 50px auto;
 }
 
 .work-more__methods {
-	text-align: center;
+  text-align: center;
 }
 
 .work-more__methods h2 {
-	text-decoration: underline;
-	margin-bottom: 20px;
+  text-decoration: underline;
+  margin-bottom: 20px;
 }
 
 .work-more__methods h3 {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* Methodology section CSS block */
 
 .methodology {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
 }
 
 .methodology ul {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0;
-	max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  max-width: 1000px;
 }
 
 .methodology-requirements,
@@ -172,16 +174,16 @@ h2 a[href*='http'] {
 .methodology-design,
 .methodology-code,
 .methodology-testing {
-	padding: 20px 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	box-shadow: -10px 10px 5px -100px #757575;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: -10px 10px 5px -100px #757575;
 }
 
 .methodology-requirements {
-	padding-top: 0;
+  padding-top: 0;
 }
 
 .methodology-requirements h4,
@@ -189,131 +191,136 @@ h2 a[href*='http'] {
 .methodology-design h4,
 .methodology-code h4,
 .methodology-testing h4 {
-	border-radius: 5px;
-	color: white;
-	display: inline-block;
-	padding: 10px;
-	margin: 20px;
-	width: 150px;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+  width: 150px;
 }
 
 .methodology-requirements {
-	border: solid;
-	border-width: 0 0 3px 3px;
-	border-image-source: linear-gradient(to right, white 1%, blue 60%, orange 100%);
-	border-image-slice: 50;
+  border: solid;
+  border-width: 0 0 3px 3px;
+  border-image-source: linear-gradient(
+    to right,
+    white 1%,
+    blue 60%,
+    orange 100%
+  );
+  border-image-slice: 50;
 }
 
 .methodology-analysis {
-	border: solid;
-	border-width: 0 3px 3px 0;
-	border-image-source: linear-gradient(to left, orange 70%, green 100%);
-	border-image-slice: 5;
+  border: solid;
+  border-width: 0 3px 3px 0;
+  border-image-source: linear-gradient(to left, orange 70%, green 100%);
+  border-image-slice: 5;
 }
 
 .methodology-design {
-	border: solid;
-	border-width: 0 0 3px 3px;
-	border-image-source: linear-gradient(to right, green 70%, red 100%);
-	border-image-slice: 5;
+  border: solid;
+  border-width: 0 0 3px 3px;
+  border-image-source: linear-gradient(to right, green 70%, red 100%);
+  border-image-slice: 5;
 }
 
 .methodology-code {
-	border: solid;
-	border-width: 0 3px 3px 0;
-	border-image-source: linear-gradient(to left, red 70%, purple 100%);
-	border-image-slice: 5;
+  border: solid;
+  border-width: 0 3px 3px 0;
+  border-image-source: linear-gradient(to left, red 70%, purple 100%);
+  border-image-slice: 5;
 }
 
 .methodology-testing {
-	border: solid;
-	border-width: 0 0 3px 3px;
-	border-image-source: linear-gradient(to right, purple 70%, white 100%);
-	border-image-slice: 5;
+  border: solid;
+  border-width: 0 0 3px 3px;
+  border-image-source: linear-gradient(to right, purple 70%, white 100%);
+  border-image-slice: 5;
 }
 
 .methodology-requirements h4 {
-	background-color: blue;
+  background-color: blue;
 }
 
 .methodology-analysis h4 {
-	background-color: orange;
+  background-color: orange;
 }
 
 .methodology-design h4 {
-	background-color: green;
+  background-color: green;
 }
 
 .methodology-code h4 {
-	background-color: red;
+  background-color: red;
 }
 
 .methodology-testing h4 {
-	background-color: purple;
+  background-color: purple;
 }
 
 /* Coding language logo CSS block */
 
 .code-logos {
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .code-logos__logo {
-	width: 180px;
+  width: 180px;
 }
 
 .code-logos__logo svg {
-	width: 90%;
-	margin: 10px;
+  width: 90%;
+  margin: 10px;
 }
 
 /* Media queries */
 
 @media (max-width: 1430px) {
-	.work {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+  .work {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-	.work-list ul {
-		padding: 0;
-		align-self: center;
-	}
+  .work-list ul {
+    padding: 0;
+    align-self: center;
+  }
 
-	.work,
-	.work-list,
-	.work-about,
-	#work-iframe-wrapper {
-		width: 100%;
-		height: auto;
-		padding: 0;
-		border: 0;
-	}
+  .work,
+  .work-list,
+  .work-about,
+  #work-iframe-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border: 0;
+  }
 }
 
 @media (max-width: 900px) {
-	#work-iframe-wrapper {
-		transform: scale(0.8, 0.8);
-	}
-	.work-list {
-		margin-bottom: -70px;
-	}
-	.work-about {
-		margin-top: -60px;
-	}
+  #work-iframe-wrapper {
+    transform: scale(0.8, 0.8);
+  }
+  .work-list {
+    margin-bottom: -70px;
+  }
+  .work-about {
+    margin-top: -60px;
+  }
 }
 
 @media (max-width: 390px) {
-	#work-iframe-wrapper {
-		transform: scale(0.7, 0.7);
-	}
-	.work-list {
-		margin-bottom: -100px;
-	}
-	.work-about {
-		margin-top: -90px;
-	}
+  #work-iframe-wrapper {
+    transform: scale(0.7, 0.7);
+  }
+  .work-list {
+    margin-bottom: -100px;
+  }
+  .work-about {
+    margin-top: -90px;
+  }
 }
