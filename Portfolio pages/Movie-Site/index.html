@@ -27,6 +27,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet" />
 		<!-- Navbar hamburger icon CSS -->
 		<link href="/hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
+		<!-- W3 schools CSS, used for gallery -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 		<!-- Animate CSS link -->
 		<link rel="stylesheet" href="/animate.min.css" />
 		<!-- Main page CSS -->
@@ -36,7 +38,7 @@
 		<title>S.Johnson - Portfolio</title>
 	</head>
 	<body>
-		<!-- Content wrapper -->
+		<!-- Content Wrapper -->
 		<div id="wrapper">
 			<!-- Sidebar -->
 			<div id="sidebar-wrapper">
@@ -72,7 +74,7 @@
 						<!-- GitHub link -->
 						<li>
 							<a href="https://github.com/SteJ97" target="__blank"
-								><img src="/Images/github-11-xxl.png" alt="GitHub" title="My GitHub!"
+								><img src="/Images/github-11-xxl.png" alt="" title="My GitHub!"
 							/></a>
 						</li>
 						<!-- Twitter link -->
@@ -105,27 +107,31 @@
 									</button>
 								</a>
 							</header>
-							<!-- Responsive iframe work showcase -->
+							<!-- Bee centre work showcase -->
 							<div class="work">
 								<!-- Work links -->
 								<div class="work-list">
 									<ul>
 										<h2>My Work</h2>
-										<li><a href="/Portfolio pages/Bee-centre/index.html">The Bee Centre</a></li>
-										<li><a href="/Portfolio pages/Movie-Site/index.html">Movie Site</a></li>
-										<li><a class="active" href="#">Responsive Iframe</a></li>
+										<li><a href="#">The Bee Centre</a></li>
+										<li><a class="active" href="/Portfolio pages/Movie-Site/index.html">Movie Site</a></li>
+										<li><a href="/Portfolio pages/Iframe/index.html">Responsive Iframe</a></li>
 									</ul>
 								</div>
-								<!-- Centre row iframe wrapper -->
-								<div id="work-iframe-wrapper">
+								<!-- Middle row iframe wrapper -->
+								<div id="work-iframe-wrapper"> 
 									<!-- Iframe link -->
-									<h2><a href="https://happy-lamport-fe5e6e.netlify.app" target="_blank">Responsive Iframe</a></h2>
+									<h2><a href="https://keen-hypatia-afc630.netlify.app" target="_blank">The Bee Centre</a></h2>
 									<!-- Main iframe container -->
 									<div class="work-iframe">
-										<img src="/Images/iframe-site.jpg" alt="iframe-site" />
+										<iframe
+											src="https://keen-hypatia-afc630.netlify.app"
+											id="frame_1"
+											title="bee-site"
+										></iframe>
 									</div>
 								</div>
-								<!-- Right side about work -->
+								<!-- Right side about work  -->
 								<div class="work-about">
 									<h2>About the work</h2>
 									<p>
@@ -152,14 +158,13 @@
 								</h2>
 								<div class="work-more-intro">
 									<p>
-										As a University mini project, i have created a responsive iframe application
-										that shows websites at 5 given resolutions.
-										<br /><br />
-										This application can help in the development of a site, as each iframe can show
-										a different perspective of the site, ranging from Mobile phone to Desktop
-										Monitor. I personally find this application faster and easier to use than the
-										included toggle device web tool on chrome. Resolutions for each iframe are also
-										shown, so user's know what resolutions they're working with.
+										As a Project brief for university, i have designed and created an informative
+										site for 'The Bee Centre', an environmental orientated business focused on
+										bee's. <br /><br />
+										I was required to create a 5 page site, which each page required a variety of
+										different types of information, including basic paragraph texts, galleries and a
+										usable contact form. The whole colour scheme of the site follows what the client
+										asked for along with a theme type theme.
 									</p>
 								</div>
 							</div>
@@ -167,28 +172,122 @@
 					</div>
 					<!-- Third row -->
 					<div class="row row-3 justify-content-center">
+						<div class="col-xl-8">
+							<!-- Work showcase gallery -->
+							<div class="w3-content work-gallery">
+								<!-- Large gallery top images -->
+								<img
+									class="mySlides"
+									src="/Images/bee-site-home.jpg"
+									style="width: 100%; display: none;"
+									alt="bee-site-home"
+								/>
+								<img class="mySlides" src="/Images/bee-site-home-about.jpg" style="width: 100%;" alt="bee-site-about" />
+								<img
+									class="mySlides"
+									src="/Images/bee-site-home-events.jpg"
+									style="width: 100%; display: none;"
+									alt="bee-site-events"
+								/>
+								<img
+									class="mySlides"
+									src="/Images/bee-site-home-contact.jpg"
+									style="width: 100%; display: none;"
+									alt="bee-site-events"
+								/>
+								<!-- Gallery image load links -->
+								<div class="w3-row-padding w3-section">
+									<div class="w3-col s3">
+										<img
+											class="demo w3-opacity w3-hover-opacity-off"
+											src="/Images/bee-site-home.jpg"
+											style="width: 100%; cursor: pointer;"
+											onclick="currentDiv(1)"
+											alt="bee-site-home"
+										/>
+									</div>
+									<div class="w3-col s3">
+										<img
+											class="demo w3-opacity w3-hover-opacity-off"
+											src="/Images/bee-site-home-about.jpg"
+											style="width: 100%; cursor: pointer;"
+											onclick="currentDiv(2)"
+											alt="bee-site-about"
+										/>
+									</div>
+									<div class="w3-col s3">
+										<img
+											class="demo w3-opacity w3-hover-opacity-off"
+											src="/Images/bee-site-home-events.jpg"
+											style="width: 100%; cursor: pointer;"
+											onclick="currentDiv(3)"
+											alt="bee-site-meet"
+										/>
+									</div>
+									<div class="w3-col s3">
+										<img
+											class="demo w3-opacity w3-hover-opacity-off"
+											src="/Images/bee-site-home-contact.jpg"
+											style="width: 100%; cursor: pointer;"
+											onclick="currentDiv(4)"
+											alt="bee-site-events"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Forth row -->
+					<div class="row row-4 justify-content-center">
 						<div class="col-lg-10">
 							<!-- Work methods -->
 							<div class="work-more__methods">
 								<h2>
 									Methods
 								</h2>
-								<!-- How the work works -->
-								<div class="work-more__methods-text">
-									<h3>How it works</h3>
-									<p>
-										- The application is relies mostly on the style of the iframe for each
-										resolution.
-										<br /><br />- When each of the buttons in the navigation bar are clicked, the
-										iframe style is changed, such as the width and height. <br /><br />- This shows
-										how a site would look on most devices corresponding to the name of the button
-										clicked. <br /><br />- Now a problem can emerge with this type of application.
-										<br /><br />- If the resolution of your monitor is lower than the iframes, the
-										iframe will not show 100% in the browser window. <br /><br />- To combat this, a
-										set of media queries have been created to change the scale of the iframe at
-										certain resolutions. <br /><br />- This allows for the iframes to show 100%
-										without changing how the site would look.
-									</p>
+								<h3>Methdology</h3>
+								<!-- Work Methodology -->
+								<div class="methodology">
+									<ul>
+										<li class="methodology-requirements">
+											<h4>Requirements</h4>
+											<p>
+												I broke down the brief to create a requirements list. This includes
+												everything from the colours to use, to every piece of content that needs
+												to be included.
+											</p>
+										</li>
+										<li class="methodology-analysis">
+											<h4>Analysis</h4>
+											<p>
+												The requirements list is analysed to get the design stage ready. This
+												allows for me to know every feature that needs to be included in the
+												design(s).
+											</p>
+										</li>
+										<li class="methodology-design">
+											<h4>Design</h4>
+											<p>
+												Usually with Photoshop, i will then create a set of draft designs. I
+												then choose the best design and refine it.
+											</p>
+										</li>
+										<li class="methodology-code">
+											<h4>Code</h4>
+											<p>
+												I now code the product page by page based on the final design. Visual
+												code is definetly my choice of software here!
+											</p>
+										</li>
+										<li class="methodology-testing">
+											<h4>Testing</h4>
+											<p>
+												Now it's time to look for bugs! Every feature is tested and i look at
+												every page at as low and high of a resolution as i can. Usually from
+												250px - 1440px.
+											</p>
+										</li>
+									</ul>
 								</div>
 								<!-- Work languages used -->
 								<h3>
@@ -213,7 +312,7 @@
 												/>
 											</svg>
 										</div>
-										<p>HTML was used for the content, such as the search bar and iframe.</p>
+										<p>HTML was used for the content, from the paragraphs to the contact form.</p>
 									</div>
 									<!-- Javascript logo SVG -->
 									<div class="code-logos__logo">
@@ -232,7 +331,7 @@
 												/>
 											</svg>
 										</div>
-										<p>CSS was used just to style the navigation bar.</p>
+										<p>CSS allowed for the Bee colour theme the site holds.</p>
 									</div>
 									<!-- CSS logo SVG -->
 									<div class="code-logos__logo">
@@ -252,7 +351,8 @@
 											</svg>
 										</div>
 										<p>
-											JavaScript allowed for each button to perform they're needed function.
+											JavaScript allowed for the gallery to work and to load the navbar on every
+											page.
 										</p>
 									</div>
 								</div>
