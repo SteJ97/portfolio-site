@@ -154,6 +154,12 @@ h2 a[href*="http"] {
   margin-bottom: 20px;
 }
 
+/* Tools Used block */
+
+.row-5 {
+  text-align: center;
+}
+
 /* Methodology section CSS block */
 
 .methodology {
@@ -265,6 +271,7 @@ h2 a[href*="http"] {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .code-logos__logo {
