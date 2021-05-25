@@ -282,6 +282,14 @@ h2 a[href*="http"] {
   margin: 10px;
 }
 
+.wireframe-images {
+  max-width: 1000px;
+}
+
+.wireframe-images img {
+  width: 80%;
+}
+
 /* Media queries */
 
 @media (max-width: 1430px) {
