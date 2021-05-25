@@ -155,7 +155,8 @@ h2 a[href*="http"] {
 
 /* Tools Used block */
 
-.row-5 {
+.row-5,
+.row-7 {
   text-align: center;
 }
 
