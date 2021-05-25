@@ -1,15 +1,20 @@
 .CV {
-	margin: 50px auto;
-	max-width: 820px;
-	padding: 10px;
+  margin: 70px auto;
+  max-width: 820px;
+  padding: 10px;
+  box-shadow: 0 0 3px 1px;
+  background: url(https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1858&q=80);
 }
 
 /* Headings CSS block */
 
 h1,
-h2,
-h3 {    
-    padding: 5px;
-    padding-left: 0px;
-	border-bottom: solid rgba(0, 0, 0, 0.2) 1px;
+h2 {
+  padding: 5px;
+  padding-left: 0px;
+  border-bottom: solid rgba(0, 0, 0, 0.2) 1px;
+}
+
+.work_experience {
+  padding-bottom: 16px;
 }

@@ -278,6 +278,44 @@ input:checked + .slider:before {
   opacity: 1;
 }
 
+/* Portfolio work section */
+
+.work-list ul {
+  text-align: center;
+  list-style: none;
+  align-self: flex-end;
+}
+
+.work-list li {
+  margin: 8px 0;
+  width: 100%;
+}
+
+.work-list li a {
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+  margin-right: 8px;
+  color: black;
+  text-decoration: none;
+  background-color: #d3d3d3;
+  box-shadow: #afafaf 0px 0px 2px 1px;
+}
+
+.work-list li a:hover {
+  background-color: #a7a7a7;
+}
+
+.work-list li a.active {
+  background-color: #a7a7a7;
+}
+
+.work-extras {
+  margin-top: 40px;
+}
+
+/* Footer style */
+
 footer {
   display: flex;
   justify-content: center;
