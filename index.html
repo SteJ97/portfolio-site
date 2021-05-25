@@ -1,180 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-			crossorigin="anonymous"
-		/>
-		<script
-			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-			crossorigin="anonymous"
-		></script>
-		<link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet" />
-		<!-- Navbar hamburger icon CSS -->
-		<link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
-		<!-- Animate.CSS link -->
-		<link rel="stylesheet" href="animate.min.css" />
-		<!-- Main page CSS -->
-		<link rel="stylesheet" href="style.css" />
-		<!-- All pages CSS -->
-		<link rel="stylesheet" href="shared.css" />
-		<title>S.Johnson - About</title>
-	</head>
-	<body>
-		<!-- Content wrapper -->
-		<div id="wrapper">
-			<!-- Sidebar -->
-			<div id="sidebar-wrapper">
-				<!-- Navigation links -->
-				<ul class="sidebar-nav">
-					<!-- Main logo -->
-					<div class="sidebar-logo">
-						<a href="#"><img src="/Images/signature.png" alt="Logo" /></a>
-					</div>
-					<!-- Main nav links -->
-					<li><a href="#">about</a></li>
-					<li><a href="/Portfolio pages/Bee-centre/index.html">Portfolio</a></li>
-					<li><a href="/CV Page/index.html">My CV</a></li>
-				</ul>
-				<!-- Bottom navigation social links -->
-				<div class="sidebar-nav-social">
-					<!-- Dark mode toggle -->
-					<p>Dark mode</p>
-					<label class="switch" id="dark-mode-toggle">
-						<!-- Dark mode toggle function -->
-						<input onclick="darkMode()" type="checkbox" />
-						<span class="slider round"></span>
-					</label>
-					<!-- Main social links list -->
-					<ul class="sidebar-nav-social__items">
-						<!-- Email link -->
-						<li>
-							<a href="mailto:stej97@hotmail.co.uk" target="__blank"><img src="/Images/mail-xxl.png" alt="E-mail" /></a>
-						</li>
-						<!-- Linkedin link -->
-						<li>
-							<a href="https://www.linkedin.com/in/stephen-johnson-504437180/" target="__blank"><img src="/Images/linkedin-xxl.png" alt="Linked-in" /></a>
-						</li>
-						<!-- GitHub link -->
-						<li>
-							<a href="https://github.com/SteJ97" target="__blank"
-								><img src="/Images/github-11-xxl.png" alt="" title="My GitHub!"
-							/></a>
-						</li>
-						<!-- Twitter link -->
-						<li>
-							<a href="https://twitter.com/PHNX1997" target="__blank"><img src="/Images/twitter-xxl.png" alt="Twitter" /></a>
-						</li>
-					</ul>
-				</div>
-			</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Navbar hamburger icon CSS -->
+    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
+    <!-- Animate.CSS link -->
+    <link rel="stylesheet" href="animate.min.css" />
+    <!-- Main page CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- All pages CSS -->
+    <link rel="stylesheet" href="shared.css" />
+    <title>S.Johnson - About</title>
+  </head>
+  <body>
+    <!-- Content wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <!-- Navigation links -->
+        <ul class="sidebar-nav">
+          <!-- Main logo -->
+          <div class="sidebar-logo">
+            <a href="#"><img src="/Images/signature.png" alt="Logo" /></a>
+          </div>
+          <!-- Main nav links -->
+          <li><a href="#">about</a></li>
+          <li>
+            <a href="/Portfolio pages/Bee-centre/index.html">Portfolio</a>
+          </li>
+          <li><a href="/CV Page/index.html">My CV</a></li>
+        </ul>
+        <!-- Bottom navigation social links -->
+        <div class="sidebar-nav-social">
+          <!-- Dark mode toggle -->
+          <p>Dark mode</p>
+          <label class="switch" id="dark-mode-toggle">
+            <!-- Dark mode toggle function -->
+            <input onclick="darkMode()" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <!-- Main social links list -->
+          <ul class="sidebar-nav-social__items">
+            <!-- Email link -->
+            <li>
+              <a href="mailto:stej97@hotmail.co.uk" target="__blank"
+                ><img src="/Images/mail-xxl.png" alt="E-mail"
+              /></a>
+            </li>
+            <!-- Linkedin link -->
+            <li>
+              <a
+                href="https://www.linkedin.com/in/stephen-johnson-504437180/"
+                target="__blank"
+                ><img src="/Images/linkedin-xxl.png" alt="Linked-in"
+              /></a>
+            </li>
+            <!-- GitHub link -->
+            <li>
+              <a href="https://github.com/SteJ97" target="__blank"
+                ><img src="/Images/github-11-xxl.png" alt="" title="My GitHub!"
+              /></a>
+            </li>
+            <!-- Twitter link -->
+            <li>
+              <a href="https://twitter.com/PHNX1997" target="__blank"
+                ><img src="/Images/twitter-xxl.png" alt="Twitter"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-			<!-- Main Content -->
-			<div id="content-wrapper">
-				<div class="container-fluid">
-					<!-- Page progress bar -->
-					<div class="header">
-						<div class="progress-container">
-							<div class="progress-bar" id="myBar"></div>
-						</div>
-					</div>
-					<!-- First row -->
-					<div class="row row-1">
-						<div class="col-12">
-							<!-- Sidebar toggle button -->
-							<header>
-								<a href="#" class="btn" id="menu-toggle">
-									<button class="hamburger hamburger--collapse" type="button">
-										<span class="hamburger-box">
-											<span class="hamburger-inner"></span>
-										</span>
-									</button>
-								</a>
-							</header>
-							<!-- Person info  -->
-							<div class="about-me">
-								<!-- Left person text -->
-								<div class="about-me__text">
-									<h2>about me</h2>
-									<p>Hi, I’m Stephen...</p>
-									<p>A Web developer Graduate looking to start a career in the Computing Industry</p>								
-								</div>
-								<!-- Person profile picture -->
-								<div class="about-me__pic">
-									<img src="/Images/me.jpg" alt="Profile pic" />
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Second row -->
-					<div class="row row-2">
-						<div class="col-12">
-							<!-- Extra person info -->
-							<div class="about-me-2">
-								<p>
-									Soon to join the real world, it is time to set my eye and efforts on a career path.
-								</p>
-								<p>
-									I initially wanted to become a Web Developer but have set my focus on multiple computing sectors
-								</p>
-								<p>Testing, devloping, building computers are just the few sectors i have set my eyes on</p>								
-							</div>
-						</div>
-					</div>
-					<!-- Third row -->
-					<div class="row row-3">
-						<div class="col-12">
-							<!-- Person life map -->
-							<div class="journey">
-								<div class="journey-text">
-									<p>My Journey</p>
-								</div>
-								<!-- Thumbstack overlay -->
-								<div class="journey-pic">
-									<div class="journey-pic__thumbtack">
-										<img src="/Images/thumbtack.png" alt="Thumbtack" />
-									</div>
-									<!-- Person life map main picture -->
-									<div class="journey-pic__map">
-										<img src="/Images/life-drawing.jpg" alt="Life-drawing" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<footer>
-					<!-- Scroll to top footer link -->
-					<div class="to-top">
-						<a href="#wrapper"
-							><img
-								class="animated tada infinite slow"
-								src="/Images/up-arrow.png"
-								alt="Up-arrow"
-								title="Back to top"
-						/></a>
-					</div>
-					<!-- Footer site author info -->
-					<p>By Stephen Johnson - 2020</p>
-				</footer>
-			</div>
-		</div>
-		<!-- Whole page Javascript link -->
-		<script src="Javascript.js"></script>
-	</body>
+      <!-- Main Content -->
+      <div id="content-wrapper">
+        <div class="container-fluid">
+          <!-- Page progress bar -->
+          <div class="header">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>
+          </div>
+          <!-- First row -->
+          <div class="row row-1">
+            <div class="col-12">
+              <!-- Sidebar toggle button -->
+              <header>
+                <a href="#" class="btn" id="menu-toggle">
+                  <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+                </a>
+              </header>
+              <!-- Person info  -->
+              <div class="about-me">
+                <!-- Left person text -->
+                <div class="about-me__text">
+                  <h2>about me</h2>
+                  <p>Hi, I’m Stephen...</p>
+                  <p>
+                    A Web developer Graduate looking to start a career in the
+                    Computing Industry
+                  </p>
+                </div>
+                <!-- Person profile picture -->
+                <div class="about-me__pic">
+                  <img src="/Images/me.jpg" alt="Profile pic" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second row -->
+          <div class="row row-2">
+            <div class="col-12">
+              <!-- Extra person info -->
+              <div class="about-me-2">
+                <p>
+                  Soon to join the real world, it is time to set my eye and
+                  efforts on a career path.
+                </p>
+                <p>
+                  I initially wanted to become a Web Developer but have set my
+                  focus on multiple computing sectors
+                </p>
+                <p>
+                  Testing, devloping, building computers are just the few
+                  sectors i have set my eyes on
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Third row -->
+          <div class="row row-3">
+            <div class="col-12">
+              <!-- Person life map -->
+              <div class="journey">
+                <div class="journey-text">
+                  <p>My Journey</p>
+                </div>
+                <!-- Thumbstack overlay -->
+                <div class="journey-pic">
+                  <div class="journey-pic__thumbtack">
+                    <img src="/Images/thumbtack.png" alt="Thumbtack" />
+                  </div>
+                  <!-- Person life map main picture -->
+                  <div class="journey-pic__map">
+                    <img src="/Images/life-drawing.jpg" alt="Life-drawing" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <!-- Scroll to top footer link -->
+          <div class="to-top">
+            <a href="#wrapper"
+              ><img
+                class="animated tada infinite slow"
+                src="/Images/up-arrow.png"
+                alt="Up-arrow"
+                title="Back to top"
+            /></a>
+          </div>
+          <!-- Footer site author info -->
+          <p>By Stephen Johnson - 2021</p>
+        </footer>
+      </div>
+    </div>
+    <!-- Whole page Javascript link -->
+    <script src="Javascript.js"></script>
+  </body>
 </html>

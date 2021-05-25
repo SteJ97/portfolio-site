@@ -135,13 +135,9 @@ h2 a[href*="http"] {
   text-decoration: underline;
 }
 
-.work-gallery {
-  box-shadow: 0 0 3px 1px #5a5a5a;
-  margin: 50px auto;
-}
-
 .work-more__methods {
   text-align: center;
+  border-top: solid rgba(0, 0, 0, 0.2) 1.5px;
 }
 
 .work-more__methods h2 {
@@ -153,11 +149,17 @@ h2 a[href*="http"] {
   margin-bottom: 20px;
 }
 
-/* Tools Used block */
+.border-top {
+  border-top: solid rgba(0, 0, 0, 0.2) 1.5px;
+}
 
 .row-5,
 .row-7 {
   text-align: center;
+}
+
+.research-methods-info ul {
+  padding: 10px;
 }
 
 /* Methodology section CSS block */
@@ -285,10 +287,17 @@ h2 a[href*="http"] {
 
 .wireframe-images {
   max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wireframe-images img {
   width: 80%;
+}
+
+.wireframe-navbar,
+.wireframe-movie-info {
+  padding: 10px 10px;
 }
 
 /* Media queries */
