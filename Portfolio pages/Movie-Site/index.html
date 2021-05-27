@@ -90,7 +90,7 @@
             </li>
             <!-- Twitter link -->
             <li>
-              <a href="https://twitter.com/PHNX1997" target="__blank"
+              <a href="https://twitter.com/SteJ97twit" target="__blank"
                 ><img src="/Images/twitter-xxl.png" alt="Twitter"
               /></a>
             </li>
@@ -881,6 +881,7 @@
                 <div class="wireframe-navbar border-top">
                   <h3>Navigation Bar Wireframe</h3>
                   <img
+                    class="img-zoom"
                     src="/Images/Wireframe Navbar.jpg"
                     alt="Wireframe-Navbar"
                   />
@@ -888,6 +889,7 @@
                 <div class="wireframe-movie-info border-top">
                   <h3>Movie Info Page Wireframe</h3>
                   <img
+                    class="img-zoom"
                     src="/Images/Wireframe Movie-Info.jpg"
                     alt="Wireframe-Movie-Info"
                   />
@@ -914,5 +916,13 @@
     </div>
     <!-- Whole page Javascript link -->
     <script src="/Javascript.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var imgs = document.getElementsByClassName("img-zoom");
+        Array.prototype.forEach.call(imgs, function (el, i) {
+          if (el.tabIndex <= 0) el.tabIndex = 10000;
+        });
+      });
+    </script>
   </body>
 </html>

@@ -2,6 +2,19 @@ body {
   margin: 0;
 }
 
+/* img zoon in and out */
+
+.img-zoom {
+  cursor: zoom-in;
+  transition: -webkit-transform 0.1s ease;
+}
+.img-zoom:focus {
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  box-shadow: black 0 0 2px 1px;
+}
+
 /* Progress bar */
 
 .header {
