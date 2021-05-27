@@ -28,8 +28,7 @@
 /* h2 with anchor tag will display link indicator image */
 
 h2 a[href*="http"] {
-  background: url("https://mdn.mozillademos.org/files/12982/external-link-52.png")
-    no-repeat 100% 50%;
+  background: url("https://mdn.mozillademos.org/files/12982/external-link-52.png") no-repeat 100% 50%;
   background-size: 16px 16px;
   padding: 0 20px;
 }
@@ -106,7 +105,6 @@ h2 a[href*="http"] {
 }
 
 .work-more__methods h2 {
-  text-decoration: underline;
   margin-bottom: 20px;
 }
 

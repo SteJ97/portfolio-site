@@ -28,8 +28,7 @@
 /* h2 with anchor tag will display link indicator image */
 
 h2 a[href*="http"] {
-  background: url("https://mdn.mozillademos.org/files/12982/external-link-52.png")
-    no-repeat 100% 50%;
+  background: url("https://mdn.mozillademos.org/files/12982/external-link-52.png") no-repeat 100% 50%;
   background-size: 16px 16px;
   padding: 0 20px;
 }
@@ -102,10 +101,6 @@ h2 a[href*="http"] {
   margin: 40px 0;
 }
 
-.work-more h2 {
-  text-decoration: underline;
-}
-
 .work-gallery {
   box-shadow: 0 0 3px 1px #5a5a5a;
   margin: 50px auto;
@@ -172,12 +167,10 @@ h2 a[href*="http"] {
 .methodology-requirements {
   border: solid;
   border-width: 0 0 3px 3px;
-  border-image-source: linear-gradient(
-    to right,
-    white 1%,
-    blue 60%,
-    orange 100%
-  );
+  border-image-source: linear-gradient(to right,
+      white 1%,
+      blue 60%,
+      orange 100%);
   border-image-slice: 50;
 }
 
@@ -275,9 +268,11 @@ h2 a[href*="http"] {
   #work-iframe-wrapper {
     transform: scale(0.8, 0.8);
   }
+
   .work-list {
     margin-bottom: -70px;
   }
+
   .work-about {
     margin-top: -60px;
   }
@@ -287,9 +282,11 @@ h2 a[href*="http"] {
   #work-iframe-wrapper {
     transform: scale(0.7, 0.7);
   }
+
   .work-list {
     margin-bottom: -100px;
   }
+
   .work-about {
     margin-top: -90px;
   }

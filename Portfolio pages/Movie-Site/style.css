@@ -28,8 +28,7 @@
 /* h2 with anchor tag will display link indicator image */
 
 h2 a[href*="http"] {
-  background: url("https://mdn.mozillademos.org/files/12982/external-link-52.png")
-    no-repeat 100% 50%;
+  background: url("https://mdn.mozillademos.org/files/12982/external-link-52.png") no-repeat 100% 50%;
   background-size: 16px 16px;
   padding: 0 20px;
 }
@@ -107,11 +106,9 @@ h2 a[href*="http"] {
 
 .work-more__methods {
   text-align: center;
-  border-top: solid rgba(0, 0, 0, 0.2) 1.5px;
 }
 
 .work-more__methods h2 {
-  text-decoration: underline;
   margin-bottom: 20px;
 }
 
@@ -120,10 +117,10 @@ h2 a[href*="http"] {
 }
 
 .border-top {
-  border-top: solid rgba(0, 0, 0, 0.2) 1.5px;
+  border-top: solid rgb(0, 0, 0, 0.3) 0.5px !important;
 }
 
-.row-5,
+.row-6,
 .row-7,
 .row-8 {
   text-align: center;
@@ -181,12 +178,10 @@ h2 a[href*="http"] {
 .methodology-requirements {
   border: solid;
   border-width: 0 0 3px 3px;
-  border-image-source: linear-gradient(
-    to right,
-    white 1%,
-    blue 60%,
-    orange 100%
-  );
+  border-image-source: linear-gradient(to right,
+      white 1%,
+      blue 60%,
+      orange 100%);
   border-image-slice: 50;
 }
 
@@ -265,12 +260,24 @@ h2 a[href*="http"] {
 
 .wireframe-images img,
 .finished-images img {
+  margin: 20px 0px;
   width: 80%;
+  box-shadow: 0px 0px 5px 0px;
 }
 
 .wireframe-navbar,
-.wireframe-movie-info {
-  padding: 10px 10px;
+.wireframe-home,
+.wireframe-search,
+.wireframe-movie-info,
+.finished-navbar,
+.finished-home,
+.finished-search,
+.finished-movie-info {
+  z-index: 100;
+}
+
+.finished-images {
+  margin-top: 40px;
 }
 
 /* Media queries */
@@ -302,9 +309,11 @@ h2 a[href*="http"] {
   #work-iframe-wrapper {
     transform: scale(0.8, 0.8);
   }
+
   .work-list {
     margin-bottom: -70px;
   }
+
   .work-about {
     margin-top: -60px;
   }
@@ -314,9 +323,11 @@ h2 a[href*="http"] {
   #work-iframe-wrapper {
     transform: scale(0.7, 0.7);
   }
+
   .work-list {
     margin-bottom: -100px;
   }
+
   .work-about {
     margin-top: -90px;
   }

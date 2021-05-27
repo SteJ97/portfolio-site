@@ -1,226 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap"
-      rel="stylesheet"
-    />
-    <link href="/hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/animate.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/shared.css" />
-    <title>S.Johnson - CV</title>
-  </head>
-  <body>
-    <!-- Content wrapper -->
-    <div id="wrapper">
-      <!-- Sidebar -->
-      <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-          <!-- Main logo -->
-          <div class="sidebar-logo">
-            <a href="/index.html"
-              ><img src="/Images/signature.png" alt="Logo"
-            /></a>
-          </div>
-          <!-- Main nav links -->
-          <li><a href="/index.html">about</a></li>
-          <li>
-            <a href="/Portfolio pages/Bee-centre/index.html">Portfolio</a>
-          </li>
-          <li><a href="/CV Page/index.html">My CV</a></li>
-        </ul>
-        <!-- Bottom navigation social links -->
-        <div class="sidebar-nav-social">
-          <!-- Dark mode toggle -->
-          <p>Dark mode</p>
-          <label class="switch" id="dark-mode-toggle">
-            <!-- Dark mode toggle function -->
-            <input onclick="darkMode()" type="checkbox" />
-            <span class="slider round"></span>
-          </label>
-          <!-- Main social links list -->
-          <ul class="sidebar-nav-social__items">
-            <!-- Email link -->
-            <li>
-              <a href="mailto:stej97@hotmail.co.uk" target="__blank"
-                ><img src="/Images/mail-xxl.png" alt="E-Mail"
-              /></a>
-            </li>
-            <!-- Linkedin link -->
-            <li>
-              <a
-                href="https://www.linkedin.com/in/stephen-johnson-504437180/"
-                target="__blank"
-                ><img src="/Images/linkedin-xxl.png" alt="Linked-in"
-              /></a>
-            </li>
-            <!-- GitHub link -->
-            <li>
-              <a href="https://github.com/SteJ97" target="__blank"
-                ><img src="/Images/github-11-xxl.png" alt="" title="My GitHub!"
-              /></a>
-            </li>
-            <!-- Twitter link -->
-            <li>
-              <a href="https://twitter.com/SteJ97twit" target="__blank"
-                ><img src="/Images/twitter-xxl.png" alt="Twitter"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      <!-- Content -->
-      <div id="content-wrapper">
-        <div class="container-fluid">
-          <!-- Page progress indicator -->
-          <div class="header">
-            <div class="progress-container">
-              <div class="progress-bar" id="myBar"></div>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet" />
+  <link href="/hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/animate.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/shared.css" />
+  <title>S.Johnson - CV</title>
+</head>
+
+<body>
+  <!-- Content wrapper -->
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <!-- Main logo -->
+        <div class="sidebar-logo">
+          <a href="/index.html"><img src="/Images/signature.png" alt="Logo" /></a>
+        </div>
+        <!-- Main nav links -->
+        <li><a href="/index.html">about</a></li>
+        <li>
+          <a href="/Portfolio pages/Bee-centre/index.html">Portfolio</a>
+        </li>
+        <li><a href="/CV Page/index.html">My CV</a></li>
+      </ul>
+      <!-- Bottom navigation social links -->
+      <div class="sidebar-nav-social">
+        <!-- Dark mode toggle -->
+        <p>Dark mode</p>
+        <label class="switch" id="dark-mode-toggle">
+          <!-- Dark mode toggle function -->
+          <input onclick="darkMode()" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <!-- Main social links list -->
+        <ul class="sidebar-nav-social__items">
+          <!-- Email link -->
+          <li>
+            <a href="mailto:stej97@hotmail.co.uk" target="__blank"><img src="/Images/mail-xxl.png" alt="E-Mail" /></a>
+          </li>
+          <!-- Linkedin link -->
+          <li>
+            <a href="https://www.linkedin.com/in/stephen-johnson-504437180/" target="__blank"><img
+                src="/Images/linkedin-xxl.png" alt="Linked-in" /></a>
+          </li>
+          <!-- GitHub link -->
+          <li>
+            <a href="https://github.com/SteJ97" target="__blank"><img src="/Images/github-11-xxl.png" alt=""
+                title="My GitHub!" /></a>
+          </li>
+          <!-- Twitter link -->
+          <li>
+            <a href="https://twitter.com/SteJ97twit" target="__blank"><img src="/Images/twitter-xxl.png"
+                alt="Twitter" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div id="content-wrapper">
+      <div class="container-fluid">
+        <!-- Page progress indicator -->
+        <div class="header">
+          <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
           </div>
-          <!-- First row -->
-          <div class="row row-1">
-            <div class="col-12">
-              <!-- Navigation toggle button -->
-              <header>
-                <a href="#" class="btn" id="menu-toggle">
-                  <button class="hamburger hamburger--collapse" type="button">
-                    <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
-                    </span>
-                  </button>
-                </a>
-              </header>
-              <div class="CV">
-                <h1>Stephen Johnson</h1>
-                <main>
-                  <section class="personal_statement">
-                    <p>
-                      <b>Email&colon;</b>
-                      <a href="mailto:stej97@hotmail.co.uk"
-                        >stej97@hotmail.co.uk</a
-                      >
-                    </p>
-					<p>
-						<b>Phone&colon;</b>
-						<a href="tel:+447488309253">07488 309253</a>
-					</p>
-                  </section>
-                  <section>
-                    <h2>Personal Statement</h2>
-                    <p>
-                      I am a Web Development Graduate, mainly looking to create
-                      a career in the computing industry, however I am open to
-                      new opportunities. Working with hardware and/or software,
-                      I am the right person for the job. I am most experienced
-                      in creating and designing websites, building both AMD and
-                      Intel computers along with many years of experience with
-                      Microsoft Office. I am also open to learning any new
-                      skills for the job
-                    </p>
-                  </section>
-                  <section class="work_experience">
-                    <h2>Work experience</h2>
-                    <h4>-Hydraulic equipment maintenance</h3>
+        </div>
+        <!-- First row -->
+        <div class="row row-1">
+          <div class="col-12">
+            <!-- Navigation toggle button -->
+            <header>
+              <a href="#" class="btn" id="menu-toggle">
+                <button class="hamburger hamburger--collapse" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+              </a>
+            </header>
+            <div class="CV">
+              <h1>Stephen Johnson</h1>
+              <main>
+                <section class="personal_statement">
+                  <p>
+                    <b>Email&colon;</b>
+                    <a href="mailto:stej97@hotmail.co.uk">stej97@hotmail.co.uk</a>
+                  </p>
+                  <p>
+                    <b>Phone&colon;</b>
+                    <a href="tel:+447488309253">07488 309253</a>
+                  </p>
+                </section>
+                <section>
+                  <h2>Personal Statement</h2>
+                  <p>
+                    I am a Web Development Graduate, mainly looking to create
+                    a career in the computing industry, however I am open to
+                    new opportunities. Working with hardware and/or software,
+                    I am the right person for the job. I am most experienced
+                    in creating and designing websites, building both AMD and
+                    Intel computers along with many years of experience with
+                    Microsoft Office. I am also open to learning any new
+                    skills for the job
+                  </p>
+                </section>
+                <section class="work_experience">
+                  <h2>Work experience</h2>
+                  <h4>-Hydraulic equipment maintenance</h3>
                     <ul>
                       <li>Cleaning hydraulic equipment</li>
                       <li>Painting</li>
                       <li>Seal replacement</li>
                     </ul>
                     <h4>-On-Site Labourer</h3>
-                    <ul>
-                      <li>Moving bricks</li>
-                      <li>Mixing Cement</li>
-                    </ul>
-					<h4>-Amazon Warehouse Associate Temp</h3>
-                    <ul></ul>                      
-                      <li>Moving parcels</li>
-                      <li>Using a pump truck</li>
-                    </ul>
-                  </section>
-                  <section class="qualifications">
-                    <h2>Qualifications</h2>
-                    <p>
-                      Edge Hill University,
-                      <b>2.1 BSc (Hons) in Web Design & Development</b>, 09/2018 –
-                      05/2020
-                    </p>
-                    <p>
-                      St Helens College,
-                      <b>Foundation Degree in Applied Computing</b>, 09/2015 –
-                      05/2017
-                    </p>
-                    <p>
-                      St Helens College, <b>Level 3 Diploma in Computing</b>,
-                      09/2013 – 06/2015
-                    </p>
-                  </section>
-                  <section class="personal_skills">
-                    <h2>Personal Skills</h2>
-                    <ul>
-                      <li><b>HTML.</b></li>
-                      <li><b>CSS.</b></li>
-                      <li><b>JavaScript.</b></li>
-					  <li>Experience with Ubuntu and Kubuntu</li>
-                      <li>Good listener.</li>
-					  <li>Experience with Microsoft office (Word, Excel, PowerPoint)</li>
-                      <li>Good with Maths and IT.</li>
-                      <li>Quite competitive.</li>
-                      <li>Can work individually and within a team.</li>
-                    </ul>
-                  </section>
-                  <section class="personal">
-                    <h2>Personal</h2>
-                    <ul>
-                      <li>Nationality&colon; English.</li>
-                      <li>Driving license&colon; Provisional.</li>
-                      <li>Language(s)&colon; English.</li>
-                    </ul>
-                  </section>
-                </main>
-              </div>
+                      <ul>
+                        <li>Moving bricks</li>
+                        <li>Mixing Cement</li>
+                      </ul>
+                      <h4>-Amazon Warehouse Associate Temp</h3>
+                        <ul></ul>
+                        <li>Moving parcels</li>
+                        <li>Using a pump truck</li>
+                        </ul>
+                </section>
+                <section class="qualifications">
+                  <h2>Qualifications</h2>
+                  <p>
+                    Edge Hill University,
+                    <b>2.1 BSc (Hons) in Web Design & Development</b>, 09/2018 –
+                    05/2020
+                  </p>
+                  <p>
+                    St Helens College,
+                    <b>Foundation Degree in Applied Computing</b>, 09/2015 –
+                    05/2017
+                  </p>
+                  <p>
+                    St Helens College, <b>Level 3 Diploma in Computing</b>,
+                    09/2013 – 06/2015
+                  </p>
+                </section>
+                <section class="personal_skills">
+                  <h2>Personal Skills</h2>
+                  <ul>
+                    <li><b>HTML.</b></li>
+                    <li><b>CSS.</b></li>
+                    <li><b>JavaScript.</b></li>
+                    <li>Experience with Ubuntu and Kubuntu</li>
+                    <li>Good listener.</li>
+                    <li>Experience with Microsoft office (Word, Excel, PowerPoint)</li>
+                    <li>Good with Maths and IT.</li>
+                    <li>Quite competitive.</li>
+                    <li>Can work individually and within a team.</li>
+                  </ul>
+                </section>
+                <section class="personal">
+                  <h2>Personal</h2>
+                  <ul>
+                    <li>Nationality&colon; English.</li>
+                    <li>Driving license&colon; Provisional.</li>
+                    <li>Language(s)&colon; English.</li>
+                  </ul>
+                </section>
+              </main>
             </div>
           </div>
         </div>
-        <footer>
-          <div class="to-top">
-            <a href="#wrapper"
-              ><img
-                class="animated tada infinite slow"
-                src="/Images/up-arrow.png"
-                alt="Up-arrow"
-                title="Back to top"
-            /></a>
-          </div>
-          <p>By Stephen Johnson - 2021</p>
-        </footer>
       </div>
+      <footer>
+        <div class="to-top">
+          <a href="#wrapper"><img class="animated tada infinite slow" src="/Images/up-arrow.png" alt="Up-arrow"
+              title="Back to top" /></a>
+        </div>
+        <p>By Stephen Johnson - 2021</p>
+      </footer>
     </div>
-    <script src="/Javascript.js"></script>
-  </body>
+  </div>
+  <script src="/Javascript.js"></script>
+</body>
+
 </html>
