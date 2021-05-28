@@ -1,3 +1,8 @@
+h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
 /* Work section CSS block */
 
 .work {
@@ -11,7 +16,7 @@
 
 .work-list {
   width: 32%;
-  height: 200px;
+  height: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,7 +102,7 @@ h2 a[href*="http"] {
 .work-more,
 .work-more__methods {
   text-align: center;
-  margin: 40px 0;
+
 }
 
 .work-more h2 {
@@ -126,16 +131,43 @@ h2 a[href*="http"] {
   text-align: center;
 }
 
-.research-methods-info ul {
-  padding: 10px;
+.row-9 {
+  margin-bottom: 70px;
 }
+
+.research-methods-info h3 {
+  margin-left: -20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.research-methods-info_img {
+  max-width: 400px;
+  margin: 10px 0;
+}
+
+.research-methods-info-final {
+  text-align: start;
+}
+
+.research-methods-info_img-final {
+  max-width: 600px;
+  margin: 10px 0;
+}
+
+
+.research-methods-info_img img,
+.research-methods-info_img-final img {
+  width: 100%;
+}
+
 
 /* Methodology section CSS block */
 
 .methodology {
   display: flex;
   justify-content: center;
-  margin-bottom: 70px;
+  padding-bottom: 10px;
 }
 
 .methodology ul {
