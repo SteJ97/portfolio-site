@@ -100,10 +100,6 @@ h2 a[href*="http"] {
   margin: 40px 0;
 }
 
-.work-more h2 {
-  text-decoration: underline;
-}
-
 .work-more__methods h2 {
   margin-bottom: 20px;
 }
