@@ -42,7 +42,7 @@ h2 a[href*="http"] {
 
 #work-iframe-wrapper {
   text-align: center;
-  width: 32%;
+  width: 32%;  
 }
 
 #work-iframe-wrapper h2 {
@@ -85,8 +85,7 @@ h2 a[href*="http"] {
   align-items: center;
   height: 80px;
   border: solid black;
-  border-width: 2px 0 2px 0;
-  margin-bottom: 40px;
+  border-width: 2px 0 2px 0;  
 }
 
 .work-more-about a {
@@ -117,10 +116,6 @@ h2 a[href*="http"] {
   margin-bottom: 20px;
 }
 
-.border-top {
-  border-top: solid rgb(0, 0, 0, 0.3) 0.5px !important;
-}
-
 .row-6,
 .row-7,
 .row-8 {
@@ -135,9 +130,15 @@ h2 a[href*="http"] {
   margin: auto;
 }
 
+.research-methods-info-more {
+  max-width: 610px;
+  margin: auto;
+}
+
 .research-methods-info_graph {
   max-width: 600px;
   margin: auto;
+  margin-bottom: 15px;
 }
 
 table,
@@ -299,6 +300,17 @@ th, td {
   box-shadow: 0px 0px 5px 0px;
 }
 
+.wireframe-images h3,
+.finished-images h3{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.wireframe-movie-info,
+.finished-movie-info {
+  margin-bottom: 15px;
+}
+
 .wireframe-navbar,
 .wireframe-home,
 .wireframe-search,
@@ -338,6 +350,8 @@ th, td {
 @media (max-width: 900px) {
   #work-iframe-wrapper {
     transform: scale(0.8, 0.8);
+    margin-top: 30px;
+    margin-bottom: 15px;
   }
 
   .work-list {
