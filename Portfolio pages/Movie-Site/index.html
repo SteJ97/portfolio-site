@@ -15,79 +15,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
-  <script>
-    window.onload = function () {
-
-      var chart = new CanvasJS.Chart("chartContainer", {
-        theme: "light1", // "light1", "light2", "dark1"
-        animationEnabled: true,
-        exportEnabled: true,
-        title: {
-          text: ""
-        },
-        axisX: {
-          margin: 10,
-          labelPlacement: "inside",
-          tickPlacement: "inside"
-        },
-        axisY2: {
-          title: "Navigation Rating",
-          titleFontSize: 14,
-          includeZero: true,
-          suffix: ""
-        },
-        data: [{
-          type: "bar",
-          axisYType: "secondary",
-          yValueFormatString: "#,###.##",
-          indexLabel: "{y}",
-          dataPoints: [{
-              label: "RottenTomatoes",
-              y: 8.25
-            },
-            {
-              label: "IMDb",
-              y: 7.75
-            },
-            {
-              label: "Flixster",
-              y: 5.5
-            },
-            {
-              label: "Mrqe",
-              y: 4.75
-            },
-            {
-              label: "Rogerebert",
-              y: 5.25
-            },
-            {
-              label: "Metacritic",
-              y: 8.25
-            },
-            {
-              label: "Letterboxd",
-              y: 4.25
-            },
-            {
-              label: "Fandango",
-              y: 8
-            },
-            {
-              label: "Themoviedb",
-              y: 7
-            },
-            {
-              label: "Allmovie",
-              y: 5.75
-            }
-          ]
-        }]
-      });
-      chart.render();
-
-    }
-  </script>
   <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet" />
   <!-- Navbar hamburger icon CSS -->
   <link href="/hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
@@ -180,7 +107,7 @@
               <div class="work-list">
                 <ul>
                   <h2>My Work</h2>
-                  
+
                   <li>
                     <a href="/Portfolio pages/Bee-centre/index.html">The Bee Centre</a>
                   </li>
@@ -211,9 +138,8 @@
               <div class="work-about">
                 <h2>About the work</h2>
                 <p>
-                  The following project was designed to broaden my knowledge
-                  and experience with UX design and allow me to follow every
-                  step as a UX designer.
+                  The following project was designed to allow for more user testing experience to be gained along with
+                  how the analysis of other websites can impact a projects overall design.
                 </p>
               </div>
             </div>
@@ -316,9 +242,8 @@
                     <li class="methodology-code">
                       <h4>Code</h4>
                       <p>
-                        Now is the time to create the low fidelity designs.
-                        These designs dont need to be 100% like the end product but as close to it as possible.
-                        I created a super low fidelity design here so users can get a feel for the navigation system i
+                        Now is the time to create the high fidelity designs.
+                        I created a high fidelity design here so users can get a feel for the navigation system i
                         implemented.
                       </p>
                     </li>
@@ -478,7 +403,7 @@
                       of website elements.
                     </p>
                     <div class="research-methods-info_graph">
-                      <div class="img-zoom" id="chartContainer" style="height: 370px; width: 100%;"></div>
+                      <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                       <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
                     </div>
                   </div>
@@ -849,7 +774,7 @@
                 <h2>Final User testing results</h2>
                 <div class="research-methods-info-final">
                   <ul>
-                    <h3>Survey</h3>
+                    <h3>Survey Example</h3>
                     <div class="research-methods-info_graph-final">
                       <table>
                         <tr>
@@ -857,14 +782,14 @@
                           <th>Answer</th>
                         </tr>
                         <tr>
-                          <td>Rotten Tomatoes</td>
+                          <td>Movie ratings</td>
                           <td>The website looks modern and doesn't hurt my eyes at all. The dark background with the
                             light text and vibrant images allowed for a nice look to the site. </td>
                         </tr>
                       </table>
 
                     </div>
-                    <h3>Testing</h3>
+                    <h3>Testing Example</h3>
                     <div class="research-methods-info_graph-final">
                       <p>Test 2: Find the movie page for "Black Widow". You can navigate the site in any way you please.
                       </p>
@@ -874,12 +799,12 @@
                           <th>Time</th>
                         </tr>
                         <tr>
-                          <td>Rotten Tomatoes</td>
+                          <td>Movie ratings</td>
                           <td>2 Seconds</td>
                         </tr>
                       </table>
                     </div>
-                    <h3>Rating</h3>
+                    <h3>Rating Example</h3>
                     <div class="research-methods-info_graph-final">
                       <table>
                         <tr>
@@ -891,8 +816,21 @@
                           <td>9</td>
                         </tr>
                       </table>
+                      <h3>Achievements</h3>
+                      <p>Overall the website design was given very positive feedback from Testers. However, with an
+                        analysis of the results independantly, some results for analysis site aspects were more
+                        positive.</p>
+                      <p></p>
+                      <div class="research-methods-info_graph">
+                        <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+                        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                      </div>
+                      <p>These results can only be taken with a grain of salt however. Due to COVID-19, there was only a
+                        total of 2 users
+                        for the end testing which is far too low to gain a set of accurate results for a website. This
+                        project could maybe be continued in the future for a better set of results for both the intitial
+                        and end results.</p>
                     </div>
-
                   </ul>
                 </div>
               </div>
