@@ -45,20 +45,11 @@ h2 a[href*="http"] {
   font-weight: bold;
 }
 
-.work-showcase {
-  max-width: 1000px;
-}
-
-.work-showcase img {
-  width: 100%;
-}
-
 .work-iframe {
-  width: 340px;
-  height: 650px;
-  border: 40px solid #292929;
-  border-width: 50px 14px;
-  border-radius: 40px;
+  max-width: 700px;
+  border: 1px solid #292929;
+  border-width: 10px 10px;
+  border-radius: 10px;
   margin: 23.5px auto;
   overflow: hidden;
   transition: all 0.5s ease;
@@ -66,7 +57,7 @@ h2 a[href*="http"] {
     0px 7px 0 #555555, 0px 10px 20px #666;
 }
 
-.work-iframe iframe {
+.work-iframe img {
   border: 0;
   width: 100%;
   height: 100%;
@@ -90,7 +81,7 @@ h2 a[href*="http"] {
   height: 80px;
   border: solid black;
   border-width: 2px 0 2px 0;
-  margin-bottom: 40px;
+
 }
 
 .work-more-about a {
@@ -106,12 +97,12 @@ h2 a[href*="http"] {
 .work-more,
 .work-more__methods {
   text-align: center;
-  margin: 40px 0;
+
 }
 
 .work-gallery {
   box-shadow: 0 0 3px 1px #5a5a5a;
-  margin: 50px auto;
+  margin: auto;
 }
 
 .work-more__methods {
@@ -120,11 +111,6 @@ h2 a[href*="http"] {
 
 .work-more__methods h2 {
   text-decoration: underline;
-  margin-bottom: 20px;
-}
-
-.work-more__methods h3 {
-  margin-bottom: 20px;
 }
 
 /* Methodology section CSS block */
@@ -132,7 +118,7 @@ h2 a[href*="http"] {
 .methodology {
   display: flex;
   justify-content: center;
-  margin-bottom: 70px;
+
 }
 
 .methodology ul {
@@ -196,17 +182,10 @@ h2 a[href*="http"] {
   border-image-slice: 5;
 }
 
-.methodology-code {
+.methodology-testing {
   border: solid;
   border-width: 0 3px 3px 0;
   border-image-source: linear-gradient(to left, red 70%, purple 100%);
-  border-image-slice: 5;
-}
-
-.methodology-testing {
-  border: solid;
-  border-width: 0 0 3px 3px;
-  border-image-source: linear-gradient(to right, purple 70%, white 100%);
   border-image-slice: 5;
 }
 
@@ -222,12 +201,8 @@ h2 a[href*="http"] {
   background-color: green;
 }
 
-.methodology-code h4 {
-  background-color: red;
-}
-
 .methodology-testing h4 {
-  background-color: purple;
+  background-color: red;
 }
 
 /* Coding language logo CSS block */
@@ -244,7 +219,18 @@ h2 a[href*="http"] {
 
 .code-logos__logo svg {
   width: 90%;
-  margin: 10px;
+}
+
+/* Product showcase */
+
+.product {
+  max-width: 700px;
+  margin: auto;
+}
+
+.product img {
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 /* Media queries */

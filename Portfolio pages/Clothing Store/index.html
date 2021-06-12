@@ -1,379 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Navbar hamburger icon CSS -->
-    <link href="/hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
-    <!-- W3 schools CSS, used for gallery -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <!-- Animate CSS link -->
-    <link rel="stylesheet" href="/animate.min.css" />
-    <!-- Main page CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- All pages CSS -->
-    <link rel="stylesheet" href="/shared.css" />
-    <title>S.Johnson - Portfolio</title>
-  </head>
 
-  <body>
-    <!-- Content Wrapper -->
-    <div id="wrapper">
-      <!-- Sidebar -->
-      <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-          <!-- Main logo -->
-          <div class="sidebar-logo">
-            <a href="/index.html"
-              ><img src="/Images/signature.png" alt="signature"
-            /></a>
-          </div>
-          <!-- Main nav links -->
-          <li><a href="/index.html">about</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="/CV Page/index.html">My CV</a></li>
-        </ul>
-        <!-- Bottom navigation social links -->
-        <div class="sidebar-nav-social">
-          <!-- Dark mode toggle -->
-          <p>Dark mode</p>
-          <label class="switch" id="dark-mode-toggle">
-            <!-- Dark mode toggle function -->
-            <input onclick="darkMode()" type="checkbox" />
-            <span class="slider round"></span>
-          </label>
-          <!-- Main social links list -->
-          <ul class="sidebar-nav-social__items">
-            <!-- Email link -->
-            <li>
-              <a href="mailto:stej97@hotmail.co.uk" target="__blank"
-                ><img src="/Images/mail-xxl.png" alt="E-Mail"
-              /></a>
-            </li>
-            <!-- Linkedin link -->
-            <li>
-              <a
-                href="https://www.linkedin.com/in/stephen-johnson-504437180/"
-                target="__blank"
-                ><img src="/Images/linkedin-xxl.png" alt="Linked-in"
-              /></a>
-            </li>
-            <!-- GitHub link -->
-            <li>
-              <a href="https://github.com/SteJ97" target="__blank"
-                ><img src="/Images/github-11-xxl.png" alt="" title="My GitHub!"
-              /></a>
-            </li>
-            <!-- Twitter link -->
-            <li>
-              <a href="https://twitter.com/SteJ97twit" target="__blank"
-                ><img src="/Images/twitter-xxl.png" alt="Twitter"
-              /></a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet" />
+  <!-- Navbar hamburger icon CSS -->
+  <link href="/hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
+  <!-- W3 schools CSS, used for gallery -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <!-- Animate CSS link -->
+  <link rel="stylesheet" href="/animate.min.css" />
+  <!-- Main page CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- All pages CSS -->
+  <link rel="stylesheet" href="/shared.css" />
+  <title>S.Johnson - Portfolio</title>
+</head>
+
+<body>
+  <!-- Content Wrapper -->
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <!-- Main logo -->
+        <div class="sidebar-logo">
+          <a href="/index.html"><img src="/Images/signature.png" alt="signature" /></a>
         </div>
+        <!-- Main nav links -->
+        <li><a href="/index.html">about</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="/CV Page/index.html">My CV</a></li>
+      </ul>
+      <!-- Bottom navigation social links -->
+      <div class="sidebar-nav-social">
+        <!-- Dark mode toggle -->
+        <p>Dark mode</p>
+        <label class="switch" id="dark-mode-toggle">
+          <!-- Dark mode toggle function -->
+          <input onclick="darkMode()" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <!-- Main social links list -->
+        <ul class="sidebar-nav-social__items">
+          <!-- Email link -->
+          <li>
+            <a href="mailto:stej97@hotmail.co.uk" target="__blank"><img src="/Images/mail-xxl.png" alt="E-Mail" /></a>
+          </li>
+          <!-- Linkedin link -->
+          <li>
+            <a href="https://www.linkedin.com/in/stephen-johnson-504437180/" target="__blank"><img
+                src="/Images/linkedin-xxl.png" alt="Linked-in" /></a>
+          </li>
+          <!-- GitHub link -->
+          <li>
+            <a href="https://github.com/SteJ97" target="__blank"><img src="/Images/github-11-xxl.png" alt=""
+                title="My GitHub!" /></a>
+          </li>
+          <!-- Twitter link -->
+          <li>
+            <a href="https://twitter.com/SteJ97twit" target="__blank"><img src="/Images/twitter-xxl.png"
+                alt="Twitter" /></a>
+          </li>
+        </ul>
       </div>
+    </div>
 
-      <!-- Main Content -->
-      <div id="content-wrapper">
-        <div class="container-fluid">
-          <!-- Page progress bar -->
-          <div class="header">
-            <div class="progress-container">
-              <div class="progress-bar" id="myBar"></div>
+    <!-- Main Content -->
+    <div id="content-wrapper">
+      <div class="container-fluid">
+        <!-- Page progress bar -->
+        <div class="header">
+          <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div>
+        </div>
+        <!-- First row -->
+        <div class="row row-1">
+          <div class="col-12">
+            <!-- Sidebar toggle button -->
+            <header>
+              <a href="#" class="btn" id="menu-toggle">
+                <button name="hamburger" class="hamburger hamburger--collapse" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+              </a>
+            </header>
+            <!-- Bee centre work showcase -->
+            <div class="work">
+              <!-- Work links -->
+              <div class="work-list">
+                <ul>
+                  <h2>My Work</h2>
+
+                  <li><a class="active" href="#">Clothing Store (In progress)</a></li>
+                  <li>
+                    <a href="/Portfolio pages/Bee-centre/index.html">The Bee Centre</a>
+                  </li>
+                  <li>
+                    <a href="/Portfolio pages/Movie-Site/index.html">Movie Site (In progress)</a>
+                  </li>
+                  <li>
+                    <a href="/Portfolio pages/Iframe/index.html">Responsive Iframe</a>
+                  </li>
+                  <div class="work-extras">
+                    <h3>Little extras</h3>
+                    <li>
+                      <a href="/Portfolio pages/Modify-any-site-css">Modify any sites CSS</a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              <!-- Middle row iframe wrapper -->
+              <div id="work-iframe-wrapper">
+                <!-- Iframe link -->
+                <h2>
+                  Clothing Store
+                </h2>
+                <!-- Main iframe container -->
+                <div class="work-iframe">
+                  <img src="/Images/Clothing store main.jpg" alt="iframe-site" />
+                </div>
+              </div>
+              <!-- Right side about work  -->
+              <div class="work-about">
+                <h2>About the work</h2>
+                <p>
+                  This site acts as an informative piece of work, aimed
+                  towards people concerned or interested on the impact bee's
+                  have on the environment.
+                </p>
+              </div>
+            </div>
+            <!-- Second row link -->
+            <div class="work-more-about">
+              <a href="#work-more">More about the work
+                <img src="/Images/downarrow.png" alt="down-arrow" /></a>
             </div>
           </div>
-          <!-- First row -->
-          <div class="row row-1">
-            <div class="col-12">
-              <!-- Sidebar toggle button -->
-              <header>
-                <a href="#" class="btn" id="menu-toggle">
-                  <button
-                    name="hamburger"
-                    class="hamburger hamburger--collapse"
-                    type="button"
-                  >
-                    <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
-                    </span>
-                  </button>
-                </a>
-              </header>
-              <!-- Bee centre work showcase -->
-              <div class="work">
-                <!-- Work links -->
-                <div class="work-list">
-                  <ul>
-                    <h2>My Work</h2>
-                    <li>
-                      <a class="active" href="#"
-                        >Clothing Store (In progress)</a
-                      >
-                    </li>
-                    <li>
-                      <a href="/Portfolio pages/Bee-centre/index.html"
-                        >The Bee Centre</a
-                      >
-                    </li>
-                    <li>
-                      <a href="/Portfolio pages/Movie-Site/index.html"
-                        >Movie Site (In progress)</a
-                      >
-                    </li>
-                    <li>
-                      <a href="/Portfolio pages/Iframe/index.html"
-                        >Responsive Iframe</a
-                      >
-                    </li>
-                    <div class="work-extras">
-                      <h3>Little extras</h3>
-                      <li>
-                        <a href="/Portfolio pages/Modify-any-site-css"
-                          >Modify any sites CSS</a
-                        >
-                      </li>
-                    </div>
-                  </ul>
-                </div>
-                <!-- Middle row iframe wrapper -->
-                <div id="work-iframe-wrapper"></div>
-                <!-- Right side about work  -->
-                <div class="work-about">
-                  <h2>About the work</h2>
+        </div>
+        <div class="all-row--container">
+          <!-- Second row -->
+          <div class="row row-2 justify-content-center">
+            <div class="col-xl-8 no-border" id="work-more">
+              <!-- Work brief text -->
+              <div class="work-more">
+                <h2>Project Brief</h2>
+                <div class="work-more-intro">
                   <p>
-                    As a way to improve my Adobe XD and general UX skills, i
-                    went away and came up with a clothing store design project.
+                    Designing a website that is part of the fasion industry, the largest ecommerce industry around, is a
+                    good way of me getting involved with this part of ecommerce website design and such a project has
+                    allowed me to gain more UX experience in both design and the use of tools such as Adobe XD.
                   </p>
                 </div>
               </div>
-              <!-- Second row link -->
-              <div class="work-more-about">
-                <a href="#work-more"
-                  >More about the work
-                  <img src="/Images/downarrow.png" alt="down-arrow"
-                /></a>
+            </div>
+          </div>
+          <!-- Third row -->
+          <div class="row row-3 justify-content-center">
+            <div class="col-xl-8 no-border">
+              <h2>Aim</h2>
+              <p>Mostly for personal experience purposes with tools and design in UX. </p>
+            </div>
+          </div>
+          <div class="row row-4 justify-content-center">
+            <div class="col-xl-8">
+              <h2>Product Design</h2>
+              <div class="product">
+                <h3>Home Page</h3>
+                <img src="/Images/clothing-store-home.jpg" alt="">
+                <h3>Search Page</h3>
+                <img src="/Images/clothing-store-search.jpg" alt="">
+                <h3>Product Page</h3>
+                <img src="/Images/clothing-store-product.jpg" alt="">
               </div>
             </div>
           </div>
-          <div class="all-row--container">
-            <!-- Second row -->
-            <div class="row row-2 justify-content-center">
-              <div class="col-xl-8" id="work-more">
-                <!-- Work brief text -->
-                <div class="work-more">
-                  <h2>Project Brief</h2>
-                  <div class="work-more-intro">
-                    <p>
-                      As a Project brief for university, i have designed and
-                      created an informative site for 'The Bee Centre', an
-                      environmental orientated business focused on bee's.
-                      <br /><br />
-                      I was required to create a 5 page site, which each page
-                      required a variety of different types of information,
-                      including basic paragraph texts, galleries and a usable
-                      contact form. The whole colour scheme of the site follows
-                      what the client asked for along with a theme type theme.
-                    </p>
-                  </div>
+          <!-- Forth row -->
+          <div class="row row-5 justify-content-center">
+            <div class="col-xl-8">
+              <!-- Work methods -->
+              <div class="work-more__methods">
+                <h2>Methods</h2>
+                <h3>Methdology</h3>
+                <!-- Work Methodology -->
+                <div class="methodology">
+                  <ul>
+                    <li class="methodology-requirements">
+                      <h4>Requirements</h4>
+                      <p>
+                        Picking the top 5 biggest clothing sites around allowed for me to create a set of requirements I
+                        needed for the project site.
+                      </p>
+                    </li>
+                    <li class="methodology-analysis">
+                      <h4>Analysis</h4>
+                      <p>
+                        Analysing these set of requirements allowed me to gain an idea of how the site needs to function
+                        and look.
+                      </p>
+                    </li>
+                    <li class="methodology-design">
+                      <h4>Design</h4>
+                      <p>
+                        Using the 5 sites as a type of base, I tried to go reuse the good aspects of the sites along
+                        with throwing in my own ideas to hopefully create a more fluid and minimal design. Adobe XD
+                        created the wireframes, storyboards and final design.
+                      </p>
+                    </li>
+                    <li class="methodology-testing">
+                      <h4>Testing</h4>
+                      <p>
+                        Adobe XD allows for a high-fidelity prototype to be created using the final designs. Having a
+                        few users test my protype allowed for user feedback that can be put into consideration for this
+                        project and for other projects to come.
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <!-- Third row -->
-            <div class="row row-3 justify-content-center">
-              <div class="col-xl-8">
-                <div class="work-showcase">
-                  <img src="/Images/Showcase image.png" alt="" />
+          </div>
+          <div class="row row-5 justify-content-center">
+            <div class="col-xl-8">
+              <!-- Work languages used -->
+              <h3>Tools</h3>
+              <!-- Code language logo SVG's container -->
+              <div class="code-logos">
+                <!-- HTML logo SVG -->
+                <div class="code-logos__logo">
+                  <div class="code-logos__logo-1">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 234"
+                      style="enable-background:new 0 0 240 234;" xml:space="preserve">
+                      <style type="text/css">
+                        .st0 {
+                          fill: #470137;
+                        }
+
+                        .st1 {
+                          fill: #FF61F6;
+                        }
+                      </style>
+                      <g id="Layer_2_1_">
+                        <g id="Surfaces">
+                          <g id="UI_UX_Surface">
+                            <g id="Outline_no_shadow">
+                              <path class="st0" d="M42.5,0h155C221,0,240,19,240,42.5v149c0,23.5-19,42.5-42.5,42.5h-155C19,234,0,215,0,191.5v-149
+					C0,19,19,0,42.5,0z" />
+                            </g>
+                          </g>
+                        </g>
+                        <g id="Outlined_Mnemonics_Logos">
+                          <g id="Xd">
+                            <path class="st1" d="M126.2,61.5L96.2,111l32,52.5c0.2,0.4,0.3,0.8,0.2,1.2c-0.1,0.4-0.5,0.1-1.1,0.2h-22.9
+				c-1.6,0-2.7-0.1-3.4-1.1c-2.1-4.2-4.3-8.3-6.4-12.5c-2.1-4.1-4.4-8.3-6.8-12.6c-2.4-4.3-4.8-8.6-7.2-13h-0.2
+				c-2.1,4.3-4.4,8.6-6.7,12.9c-2.3,4.3-4.6,8.6-6.8,12.8c-2.3,4.2-4.6,8.5-6.9,12.6c-0.4,1-1.2,1.1-2.3,1.1H35.7
+				c-0.4,0-0.7,0.2-0.7-0.3c-0.1-0.4,0-0.8,0.2-1.1l31.1-51L36,61.4c-0.3-0.4-0.4-0.8-0.2-1c0.2-0.3,0.6-0.4,1-0.4h22.7
+				c0.5,0,1,0.1,1.4,0.2c0.4,0.2,0.7,0.5,1,0.9c1.9,4.3,4.1,8.6,6.4,12.9c2.4,4.3,4.7,8.5,7.2,12.7c2.4,4.2,4.6,8.4,6.7,12.7h0.2
+				c2.1-4.4,4.3-8.7,6.5-12.9c2.2-4.2,4.5-8.4,6.8-12.6c2.3-4.2,4.5-8.5,6.7-12.6c0.1-0.4,0.3-0.8,0.6-1c0.4-0.2,0.8-0.3,1.3-0.2
+				h21.1c0.5-0.1,1,0.2,1.1,0.7C126.6,60.9,126.4,61.3,126.2,61.5L126.2,61.5z" />
+                            <path class="st1"
+                              d="M172.4,167c-7.4,0.1-14.8-1.4-21.5-4.5c-6.3-2.9-11.5-7.7-15.1-13.6c-3.7-6.1-5.5-13.7-5.5-22.8
+				c-0.1-7.4,1.8-14.7,5.5-21.1c3.8-6.5,9.3-11.9,15.9-15.5c7-3.9,15.4-5.8,25.3-5.8c0.5,0,1.2,0,2.1,0.1c0.9,0.1,1.9,0.1,3.1,0.2
+				V52.4c0-0.7,0.3-1.1,1-1.1h20.3c0.5-0.1,0.9,0.3,1,0.7c0,0.1,0,0.2,0,0.2v95.2c0,1.8,0.1,3.8,0.2,6c0.2,2.1,0.3,4.1,0.4,5.8
+				c0,0.7-0.3,1.3-1,1.6c-5.2,2.2-10.7,3.8-16.3,4.8C182.7,166.5,177.6,167,172.4,167z M182.2,147v-44c-0.9-0.2-1.8-0.4-2.7-0.5
+				c-1.1-0.1-2.2-0.2-3.3-0.2c-3.9,0-7.8,0.8-11.3,2.6c-3.4,1.7-6.3,4.2-8.5,7.4c-2.2,3.2-3.3,7.5-3.3,12.7c-0.1,3.5,0.5,7,1.7,10.3
+				c1,2.7,2.5,5.1,4.5,7.1c1.9,1.8,4.2,3.2,6.8,4c2.7,0.9,5.5,1.3,8.3,1.3c1.5,0,2.9-0.1,4.2-0.2C179.9,147.6,181,147.4,182.2,147z" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <p>
+                    
+                  </p>
                 </div>
-              </div>
-            </div>
-            <!-- Forth row -->
-            <div class="row row-4 justify-content-center">
-              <div class="col-lg-10">
-                <!-- Work methods -->
-                <div class="work-more__methods">
-                  <h2>Methods</h2>
-                  <h3>Methdology</h3>
-                  <!-- Work Methodology -->
-                  <div class="methodology">
-                    <ul>
-                      <li class="methodology-requirements">
-                        <h4>Requirements</h4>
-                        <p>
-                          I broke down the brief to create a requirements list.
-                          This includes everything from the colours to use, to
-                          every piece of content that needs to be included.
-                        </p>
-                      </li>
-                      <li class="methodology-analysis">
-                        <h4>Analysis</h4>
-                        <p>
-                          The requirements list is analysed to get the design
-                          stage ready. This allows for me to know every feature
-                          that needs to be included in the design(s).
-                        </p>
-                      </li>
-                      <li class="methodology-design">
-                        <h4>Design</h4>
-                        <p>
-                          Usually with Photoshop, i will then create a set of
-                          draft designs. I then choose the best design and
-                          refine it.
-                        </p>
-                      </li>
-                      <li class="methodology-code">
-                        <h4>Code</h4>
-                        <p>
-                          I now code the product page by page based on the final
-                          design. Visual code is definetly my choice of software
-                          here!
-                        </p>
-                      </li>
-                      <li class="methodology-testing">
-                        <h4>Testing</h4>
-                        <p>
-                          Now it's time to look for bugs! Every feature is
-                          tested and i look at every page at as low and high of
-                          a resolution as i can. Usually from 250px - 1440px.
-                        </p>
-                      </li>
-                    </ul>
+                <!-- Javascript logo SVG -->
+                <div class="code-logos__logo">
+                  <div class="code-logos__logo-2">
+                    <svg viewBox="0 0 452 520">
+                      <title>CSS3 Logo Badge</title>
+                      <path fill="RGB(12,115,184)" d="M 41,460 L 0,0 451,0 410,460
+                                  225,512" />
+                      <path fill="RGB(48,169,220)" d="M 226,472 L 375,431 410,37
+                                  226,37" />
+                      <path fill="RGB(236,237,238)" d="M 226,208 L 94,208 99,265 226,265 z M 226,94 L 84,94
+                                  89,150 226,150 z M 226,355 L 102,322 109,382 226,414 z" />
+                      <path fill="RGB(255,255,255)" d="M 226,265 L 295,265 288,338 226,355 226,414 341,382
+                                  367,94 226,94 226,150 306,150 300,208 226,208 z" />
+                    </svg>
                   </div>
-                  <!-- Work languages used -->
-                  <h3>Languages</h3>
-                  <!-- Code language logo SVG's container -->
-                  <div class="code-logos">
-                    <!-- HTML logo SVG -->
-                    <div class="code-logos__logo">
-                      <div class="code-logos__logo-1">
-                        <svg viewBox="0 0 452 520">
-                          <title>HTML5 Logo Badge</title>
-                          <path
-                            fill="RGB(227,79,38)"
-                            d="M 41,460 L 0,0 451,0 410,460 225,512"
-                          />
-                          <path
-                            fill="RGB(239,101,42)"
-                            d="M 226,472 L 375,431 410,37 226,37"
-                          />
-                          <path
-                            fill="RGB(236,237,238)"
-                            d="M 226,208 L 151,208 146,150 226,150 226,94 84,94 99,265 226,265 z M 226,355 L162,338 158,293 102,293 109,382 226,414 z"
-                          />
-                          <path
-                            fill="RGB(255,255,255)"
-                            d="M 226,265 L 295,265 288,338 226,355 226,414 341,382 357,208 226,208 z M 226,94 L226,150 362,150 367,94 z"
-                          />
-                        </svg>
-                      </div>
-                      <p>
-                        HTML was used for the content, from the paragraphs to
-                        the contact form.
-                      </p>
-                    </div>
-                    <!-- Javascript logo SVG -->
-                    <div class="code-logos__logo">
-                      <div class="code-logos__logo-2">
-                        <svg viewBox="0 0 452 520">
-                          <title>Javascript Logo Badge</title>
-                          <path
-                            fill="RGB(229,162,40)"
-                            d="M 0,0 L 451,0 410,460 225,512 41,460"
-                          />
-                          <path
-                            fill="RGB(241,191,38)"
-                            d="M 226,472 L375,431 410,37 226,37"
-                          />
-                          <path
-                            fill="RGB(236,237,238)"
-                            d="M 226,94 L 113,94 102,265 226,265 226,208 160,208 165,150 226,150 z M 226,355 L 162,338 158,293 102,293 109,382 226,414 z"
-                          />
-                          <path
-                            fill="RGB(255,255,255)"
-                            d="M 226,265 L 295,265 288,338 226,355 226,414 341,382 357,208 226,208 z M 226,94 L 339,94 357,180 301,180 293,150 226,150 z"
-                          />
-                        </svg>
-                      </div>
-                      <p>
-                        CSS allowed for the Bee colour theme the site holds.
-                      </p>
-                    </div>
-                    <!-- CSS logo SVG -->
-                    <div class="code-logos__logo">
-                      <div class="code-logos__logo-3">
-                        <svg viewBox="0 0 452 520">
-                          <title>CSS3 Logo Badge</title>
-                          <path
-                            fill="RGB(12,115,184)"
-                            d="M 41,460 L 0,0 451,0 410,460 225,512"
-                          />
-                          <path
-                            fill="RGB(48,169,220)"
-                            d="M 226,472 L 375,431 410,37 226,37"
-                          />
-                          <path
-                            fill="RGB(236,237,238)"
-                            d="M 226,208 L 94,208 99,265 226,265 z M 226,94 L 84,94 89,150 226,150 z M 226,355 L 102,322 109,382 226,414 z"
-                          />
-                          <path
-                            fill="RGB(255,255,255)"
-                            d="M 226,265 L 295,265 288,338 226,355 226,414 341,382 367,94 226,94 226,150 306,150 300,208 226,208 z"
-                          />
-                        </svg>
-                      </div>
-                      <p>
-                        JavaScript allowed for the gallery to work and to load
-                        the navbar on every page.
-                      </p>
-                    </div>
+                  <p></p>
+                </div>
+                <!-- CSS logo SVG -->
+                <div class="code-logos__logo">
+                  <div class="code-logos__logo-3">
+                    <svg viewBox="0 0 452 520">
+                      <title>CSS3 Logo Badge</title>
+                      <path fill="RGB(12,115,184)" d="M 41,460 L 0,0 451,0 410,460 225,512" />
+                      <path fill="RGB(48,169,220)" d="M 226,472 L 375,431 410,37 226,37" />
+                      <path fill="RGB(236,237,238)"
+                        d="M 226,208 L 94,208 99,265 226,265 z M 226,94 L 84,94 89,150 226,150 z M 226,355 L 102,322 109,382 226,414 z" />
+                      <path fill="RGB(255,255,255)"
+                        d="M 226,265 L 295,265 288,338 226,355 226,414 341,382 367,94 226,94 226,150 306,150 300,208 226,208 z" />
+                    </svg>
                   </div>
+                  <p>
+                    
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <footer>
-          <!-- Scroll to top footer link -->
-          <div class="to-top">
-            <a href="#wrapper"
-              ><img
-                class="animated tada infinite slow"
-                src="/Images/up-arrow.png"
-                alt="up-arrow"
-                title="Back to top"
-            /></a>
-          </div>
-          <!-- Footer site author info -->
-          <p>By Stephen Johnson - 2021</p>
-        </footer>
       </div>
+      <footer>
+        <!-- Scroll to top footer link -->
+        <div class="to-top">
+          <a href="#wrapper"><img class="animated tada infinite slow" src="/Images/up-arrow.png" alt="up-arrow"
+              title="Back to top" /></a>
+        </div>
+        <!-- Footer site author info -->
+        <p>By Stephen Johnson - 2021</p>
+      </footer>
     </div>
-    <!-- Whole page Javascript link -->
-    <script src="/Javascript.js"></script>
-  </body>
+  </div>
+  <!-- Whole page Javascript link -->
+  <script src="/Javascript.js"></script>
+</body>
+
 </html>
