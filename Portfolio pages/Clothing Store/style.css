@@ -113,6 +113,16 @@ h2 a[href*="http"] {
   text-decoration: underline;
 }
 
+.showcase-img {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.showcase-img img {
+  width: 100%;
+}
+
 /* Methodology section CSS block */
 
 .methodology {
@@ -219,6 +229,31 @@ h2 a[href*="http"] {
 
 .code-logos__logo svg {
   width: 90%;
+}
+
+/* Flow diagram */
+
+.flow-diagram {
+  max-width: 700px;
+  margin: auto;  
+  margin-bottom: 15px;
+}
+
+.flow-diagram img {
+  width: 100%;
+  margin-right: -55px;
+}
+
+/* Wiframes */
+
+.wireframe {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.wireframe img {
+  width: 100%;
 }
 
 /* Product showcase */
